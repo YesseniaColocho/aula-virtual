@@ -1,7 +1,8 @@
 <template>
   <main>
     <BarraSuperior></BarraSuperior>
-  </main>
+    
+  
 
   <div class="fecha">
     Fecha:06/10/2022
@@ -58,9 +59,13 @@
 
   </div>
 
+  
+</main>
+<BarraInferior></BarraInferior>
 </template>
 
 <script setup>
+import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 
 //Aqui van la importaciones de componentes
