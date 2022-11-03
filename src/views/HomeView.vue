@@ -23,6 +23,9 @@
 
         </div>
 
+        <div class="col-5">
+          <BarraCurso></BarraCurso>
+        </div>
       </div>
 
       <div class="row">
@@ -129,13 +132,13 @@
             <div class="estudiantes">
 
               <ul class="lista-elementos">
-              <li>Foro <div class="recuadro">0</div>
-              </li>
-              <li> Estudiantes conectados<div class="recuadro">15</div>
-              </li>
-              <li>Lista de alumnos aula 3</li>
-          
-            </ul>
+                <li>Foro <div class="recuadro">0</div>
+                </li>
+                <li> Estudiantes conectados<div class="recuadro">15</div>
+                </li>
+                <li>Lista de alumnos aula 3</li>
+
+              </ul>
 
 
             </div>
@@ -158,6 +161,7 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+import BarraCurso from '../components/BarraCurso.vue';
 
 //Aqui van la importaciones de componentes
 </script>
@@ -210,30 +214,31 @@ import BarraSuperior from '../components/BarraSuperior.vue';
   }
 
 }
+
 .lista-elementos {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    li {
-      list-style: none;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 
-      .recuadro {
-        background: lightgrey;
-        width: 2.5em;
-        text-align: center;
-      }
+    .recuadro {
+      background: lightgrey;
+      width: 2.5em;
+      text-align: center;
     }
   }
+}
 
 .informacion-clases {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 50px;
 
-  
+
 }
 
 .calificaciones {
@@ -262,6 +267,9 @@ import BarraSuperior from '../components/BarraSuperior.vue';
   justify-content: center;
   align-items: center;
   font-weight: 500;
+}
+.mis-cursos, .titulo{
+  margin-top: 40px;
 }
 
 .linea {
@@ -316,5 +324,4 @@ import BarraSuperior from '../components/BarraSuperior.vue';
   margin-bottom: 10px;
 
 }
-
 </style>
