@@ -23,7 +23,7 @@
 
 <style scoped lang="scss">
 footer{
-    background: linear-gradient(to right,#60A4FF,#7DEBF2);
+    background: linear-gradient(to right,#7DEBF2,#60A4FF);
     padding-top:2px;
     margin-top: 50px;
 }
