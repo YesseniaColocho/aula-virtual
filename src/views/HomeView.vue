@@ -2,8 +2,6 @@
   <main>
     <BarraSuperior></BarraSuperior>
 
-
-
     <div class="fecha">
       Fecha:06/10/2022
     </div>
