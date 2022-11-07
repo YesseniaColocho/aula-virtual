@@ -96,13 +96,13 @@
                 </div>
 
                 <div class="ayuda">
-                Ayuda
-                <img src="public/pregunta.png"/>
-            </div>
+                    Ayuda
+                    <img src="public/pregunta.png" />
+                </div>
 
             </div>
 
-            
+
         </div>
 
         <BarraInferior></BarraInferior>
@@ -118,11 +118,12 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 </script>
 
 <style scoped lang="scss">
-.pagina-entrega{
-    footer{
+.pagina-entrega {
+    footer {
         margin-top: 0px;
     }
 }
+
 .fecha {
     display: flex;
     justify-content: flex-end;
@@ -224,12 +225,13 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     .informacion {
         margin-bottom: 40px;
     }
-    .recursos-para-ejericio{
+
+    .recursos-para-ejericio {
         font-weight: bold;
         margin-bottom: 30px;
     }
 
-    .recursos{
+    .recursos {
         background: lightgray;
         height: 50px;
         display: flex;
@@ -237,24 +239,27 @@ import BarraSuperior from '../components/BarraSuperior.vue';
         align-items: center;
         text-align: center;
     }
-    .recursos-adicionales{
+
+    .recursos-adicionales {
         background: lightgray;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .biblioteca{
+
+    .biblioteca {
         margin-top: 20px;
     }
-    .ayuda{
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
-    img{
-        height: 20px;
+
+    .ayuda {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            height: 20px;
+        }
     }
 }
-}
-
 </style>
