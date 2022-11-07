@@ -243,62 +243,66 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     }
 }
 
-.profesor {
-    margin-left: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    border-bottom: 1px black solid;
-    padding-bottom: 15px;
-    line-height: 35px;
-
-    img {
+.parte-izquierda {
+    .profesor {
         margin-left: 20px;
-        height: 20px;
-        width: auto;
-    }
-}
+        font-weight: 500;
+        font-size: 20px;
+        border-bottom: 1px black solid;
+        padding-bottom: 15px;
+        line-height: 35px;
 
-.boton-notas {
-    background: linear-gradient(to right, #60A4FF, #7DEBF2);
-    margin: 30px 0 15px 20px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: large;
-    border-radius: 3px;
-}
-
-.notas {
-    margin-left: 20px;
-
-    >div {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-
-        &:last-child {
-            margin-bottom: 5px;
+        img {
+            margin-left: 20px;
+            height: 20px;
+            width: auto;
         }
     }
 
-    .modulo {
-        background: lightgrey;
-        height: 50px;
-        width: 250px;
+    .boton-notas {
+        background: linear-gradient(to right, #60A4FF, #7DEBF2);
+        margin: 30px 0 15px 20px;
+        height: 70px;
         display: flex;
         align-items: center;
         padding: 20px;
+        font-size: large;
+        border-radius: 3px;
     }
 
-    .calificacion {
-        background: lightgray;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        align-items: center;
-        padding: 20px;
+    .notas {
+        margin-left: 20px;
+
+        >div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            &:last-child {
+                margin-bottom: 5px;
+            }
+        }
+
+        .modulo {
+            background: lightgrey;
+            height: 50px;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .calificacion {
+            background: lightgray;
+            height: 50px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
     }
+
 }
 
 .parte-derecha {
@@ -339,50 +343,55 @@ import BarraSuperior from '../components/BarraSuperior.vue';
             }
         }
     }
-}
 
-.recursos-modulo {
-    margin-top: 20px;
-    text-align: center;
-
-    .recursos-del-modulo {
+    .recursos-modulo {
         margin-top: 20px;
-        background: lightgrey;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+        text-align: center;
 
-.alumnado {
-    text-align: center;
-    margin-top: 20px;
-
-    strong {
-        border-bottom: 1px black solid;
-        width: 100%;
-        display: block;
-        padding-bottom: 20px;
-    }
-}
-
-.informacion-alumnado {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 10px;
-
-    .alumno-foro-grupos {
-        margin-top: 10px;
+        .recursos-del-modulo {
+            margin-top: 20px;
+            background: lightgrey;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    .numero-alumnados {
-        background: lightgrey;
-        height: 40px;
-        width: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .alumnado {
+        text-align: center;
+        margin-top: 20px;
+
+        strong {
+            border-bottom: 1px black solid;
+            width: 100%;
+            display: block;
+            padding-bottom: 20px;
+        }
+
+        .informacion-alumnado {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            margin: 20px 10px;
+
+            .alumno-foro-grupos {
+                margin-top: 10px;
+                width: 75%;
+                text-align: left;
+
+            }
+
+            .numero-alumnados {
+                background: lightgrey;
+                height: 40px;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }
 </style>
