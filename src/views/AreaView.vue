@@ -15,7 +15,16 @@
             </div>
 
             <div class="alumno-foto col-2">
-                <img src="public/group 3.png" />
+
+                <div class="foto-wrapper">
+                    <div class="circulo-foto">
+                        <img src="public/alumno.png" />
+                    </div>
+
+                    <div class="circulo-estado">
+                        <span></span>
+                    </div>
+                </div>
             </div>
 
             <div class="cursos-alumno col-7">
@@ -106,21 +115,21 @@
                     <strong>Becas solicitadas</strong>
                 </div>
                 <div class="linea">
-                <span></span>
+                    <span></span>
                 </div>
             </div>
 
         </div>
 
         <div class="ayuda">
-            <img src="public/ayuda2.png"/>
+            <img src="public/ayuda2.png" />
             Ayuda
         </div>
 
 
 
 
-<BarraInferior></BarraInferior>
+        <BarraInferior></BarraInferior>
 
     </main>
 </template>
@@ -157,9 +166,31 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     .alumno-foto {
         display: flex;
         justify-content: center;
+        align-items:flex-start;
 
-        img {
+        .foto-wrapper {
             height: 80%;
+            .circulo-foto {
+                height: 100%;
+                overflow: hidden;
+                border-radius: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .circulo-estado {
+                background: rgb(8, 172, 8);
+                border-radius: 100%;
+                position: absolute;
+                height: 20%;
+                width: 20%;
+                border: 3px white solid;
+                top: 76%;
+                left: 78%;
+            }
         }
     }
 
@@ -222,23 +253,25 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 
 .adminitracion {
     padding-left: 20px;
-    
+
 
     img {
         width: 25px;
         margin-left: 10px;
     }
 }
-.becas{
+
+.becas {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
     margin-bottom: 30px;
-    .linea{
+
+    .linea {
         padding: 10px;
         margin-right: 40%;
-        
-        span{
+
+        span {
             width: 100px;
             height: 2px;
             background: rgb(55, 55, 55);
@@ -247,18 +280,21 @@ import BarraSuperior from '../components/BarraSuperior.vue';
         }
     }
 }
-.ayuda{
+
+.ayuda {
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
     margin-bottom: 20px;
-    img{
+
+    img {
         padding-right: 10px;
         height: 30px;
     }
 }
-.area{
-    footer{
+
+.area {
+    footer {
         margin-top: 0;
     }
 }
