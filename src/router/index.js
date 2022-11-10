@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ComposicionView from '../views/ComposicionView.vue'
 import EntregaView from '../views/EntregaView.vue'
+import AreaView from '../views/AreaView.vue'
+
 import MensajeriaView from '../views/MensajeriaView.vue'
 
 const router = createRouter({
@@ -18,9 +20,14 @@ const router = createRouter({
       component: ComposicionView
     },
     {
-    path: '/entrega',
-    name: 'entrega',
-    component: EntregaView
+      path: '/entrega',
+      name: 'entrega',
+      component: EntregaView
+    },
+    {
+      path: '/areapersonal',
+      name: 'areapersonal',
+      component: AreaView
     },
     {
       path: '/mensajeria',
