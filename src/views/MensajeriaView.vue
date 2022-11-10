@@ -105,46 +105,11 @@
 
             <div class="mensajes-recibidos col-9">
 
-                <div class="informacion-email">
+                <div v-for="email in emails" class="informacion-email">
                     <input class="boton-check" type="checkbox" />
-                    <span>Andres Garrido B</span>
-                    <span>Duda Módulo 3</span>
-                    <span>Viernes 18/10/2022</span>
-                </div>
-
-                <div class="informacion-email">
-                    <input class="boton-check" type="checkbox" />
-                    <span>Carmen Gutierrez Aros</span>
-                    <span>Tutoría</span>
-                    <span>Miercoles 07/10/2022</span>
-                </div>
-
-                <div class="informacion-email">
-                    <input class="boton-check" type="checkbox" />
-                    <span>María Gomez Santos</span>
-                    <span>Confusión en calificacción</span>
-                    <span>Lunes 27/09/2022</span>
-                </div>
-
-                <div class="informacion-email">
-                    <input class="boton-check" type="checkbox" />
-                    <span>Andres Garrido B <img src="public/clip.png"/></span>
-                    <span>Re: Seguimiento</span>
-                    <span>Jueves 01/09/2022</span>
-                </div>
-
-                <div class="informacion-email">
-                    <input class="boton-check" type="checkbox" />
-                    <span>Ernesto A Lopez</span>
-                    <span>Cambio fecha de entrega</span>
-                    <span>Martes 23/08/20222</span>
-                </div>
-
-                <div class="informacion-email">
-                    <input class="boton-check" type="checkbox" />
-                    <span>Carmen Gutierrez Aros</span>
-                    <span>Becas</span>
-                    <span>Viernes 17/08/2022</span>
+                    <span>{{email.enviar}}</span>
+                    <span>{{email.asunto}}</span>
+                    <span>{{email.fecha}}</span>
                 </div>
 
 
@@ -152,19 +117,59 @@
         </div>
 
         <div class="botones-siguente-pagina">
-            <img src="public/botonizquierda.png"/>
-            <img src="public/botonderecha.png"/>
+            <img src="public/botonizquierda.png" />
+            <img src="public/botonderecha.png" />
         </div>
 
-<BarraInferior></BarraInferior>
+        <BarraInferior></BarraInferior>
     </main>
 </template>
 
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+</script>
 
-
+<script>
+export default {
+    name: "MensajeriaView",
+    data() {
+        return {
+            emails: [
+                {
+                    enviar: "Andres Garrido B",
+                    asunto: "Duda Módulo 3",
+                    fecha: "Viernes 18/10/2022",
+                },
+                {
+                    enviar: "Carmen Gutierrez Aros",
+                    asunto: "Tutoría",
+                    fecha: "Miercoles 07/10/2022",
+                },
+                {
+                    enviar: "María Gomez Santos",
+                    asunto: "Confusión en calificacción",
+                    fecha: "Lunes 27/09/2022",
+                },
+                {
+                    enviar: "Andres Garrido B",
+                    asunto: "Re: Seguimiento",
+                    fecha: "Jueves 01/09/2022",
+                },
+                {
+                    enviar: "Ernesto A Lopez",
+                    asunto: "Cambio fecha de entrega",
+                    fecha: "Martes 23/08/20222",
+                },
+                {
+                    enviar: "Carmen Gutierrez Aros",
+                    asunto: "Becas",
+                    fecha: "Viernes 17/08/2022",
+                }
+            ]
+        }
+    }
+}
 </script>
 
 <style scoped lang="scss">
@@ -280,7 +285,10 @@ import BarraSuperior from '../components/BarraSuperior.vue';
             margin-bottom: 15px;
             border-bottom: 1px lightgray solid;
             padding-bottom: 15px;
-            &:last-child{
+            display: flex;
+            align-items: center;
+
+            &:last-child {
                 border-bottom: none;
             }
 
@@ -299,7 +307,7 @@ import BarraSuperior from '../components/BarraSuperior.vue';
                 width: 47%;
             }
 
-            span:nth-child(3){
+            span:nth-child(3) {
                 width: 30%;
             }
 
@@ -311,16 +319,19 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 
     }
 }
-.botones-siguente-pagina{
+
+.botones-siguente-pagina {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
-    img{
+
+    img {
         margin-right: 10px;
     }
 }
-.mensajeria{
-    footer{
+
+.mensajeria {
+    footer {
         margin-top: 0;
     }
 }
