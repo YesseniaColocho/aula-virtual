@@ -4,6 +4,7 @@ import ComposicionView from '../views/ComposicionView.vue'
 import EntregaView from '../views/EntregaView.vue'
 import AreaView from '../views/AreaView.vue'
 
+import MensajeriaView from '../views/MensajeriaView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,14 +20,19 @@ const router = createRouter({
       component: ComposicionView
     },
     {
-    path: '/entrega',
-    name: 'entrega',
-    component: EntregaView
+      path: '/entrega',
+      name: 'entrega',
+      component: EntregaView
     },
     {
       path: '/areapersonal',
       name: 'areapersonal',
       component: AreaView
+    },
+    {
+      path: '/mensajeria',
+      name: 'mensajeria',
+      component: MensajeriaView
     }
   ]
 })
