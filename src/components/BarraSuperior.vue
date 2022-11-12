@@ -7,7 +7,7 @@
 
             <div class="imagenes">
                 <img src="/ayuda.png" />
-                <img src="/Avion.png" />
+                <img src="/avion.png" />
                 <img src="/group3.png" />
             </div>
         </div>

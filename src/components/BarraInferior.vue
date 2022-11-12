@@ -3,8 +3,8 @@
 
         <div class="footer">
             <div class="imagenes">
-                <img src="/Tweeter.png" />
-                <img src="/Facerbook.png" />
+                <img src="/tweeter.png" />
+                <img src="/facerbook.png" />
                 <img src="/instagram.png" />
             </div>
             <div class="links">
