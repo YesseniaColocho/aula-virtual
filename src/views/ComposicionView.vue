@@ -104,15 +104,16 @@
                         <strong>La asignatura</strong>
 
                         <div class="modulos">
-                            Módulo 1
+                            <span class="linea-color">Módulo 1</span>
                             <img src="public/flecha-abajo.png" />
                         </div>
 
                         <div>
-                            <ul class="informacion-asignatura">
-                                <li>Introducción</li>
-                                <li>Ejercicio 1: Arte y modelado en nuevas tecnologías</li>
-                                <li>Ejercicio 2: Estructura osea natural y animal. Conocmientos básicos</li>
+                            <ul class="informacion-asignatura lineas-lista">
+                                <li><span>Introducción</span></li>
+                                <li><span>Ejercicio 1: Arte y modelado en nuevas tecnologías</span></li>
+                                <li><span>Ejercicio 2: Estructura osea natural y animal. Conocmientos básicos</span>
+                                </li>
                             </ul>
                         </div>
 
