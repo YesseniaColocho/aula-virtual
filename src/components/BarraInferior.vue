@@ -3,9 +3,9 @@
 
         <div class="footer">
             <div class="imagenes">
-                <img src="public/Tweeter.png" />
-                <img src="public/Facerbook.png" />
-                <img src="public/instagram.png" />
+                <img src="/tweeter.png" />
+                <img src="/facerbook.png" />
+                <img src="/instagram.png" />
             </div>
             <div class="links">
                 <span>Servicio de atención</span>

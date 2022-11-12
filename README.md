@@ -33,3 +33,19 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Firebase deploy
+
+In case of needing to initialize firebase:
+```sh
+firebase init
+```
+While deploying set the public directory to dist
+Make it a single-page app
+Don't overwrite any html files
+
+To deploy:
+```sh
+npm run build
+firebase deploy
+```

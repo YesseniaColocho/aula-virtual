@@ -18,7 +18,7 @@
 
                 <div class="foto-wrapper">
                     <div class="circulo-foto">
-                        <img src="public/alumno.png" />
+                        <img src="/alumno.png" />
                     </div>
 
                     <div class="circulo-estado">
@@ -94,7 +94,7 @@
                     </div>
                     <div class="descarga">
                         Descargar copia en PDF
-                        <img src="public/descarga.png" />
+                        <img src="/descarga.png" />
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
             <div class="adminitracion col-6">
                 <div>
                     <strong>Contactar con adminitracion</strong>
-                    <img src="public/group.png" />
+                    <img src="/group.png" />
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
         </div>
 
         <div class="ayuda">
-            <img src="public/ayuda2.png" />
+            <img src="/ayuda2.png" />
             Ayuda
         </div>
 

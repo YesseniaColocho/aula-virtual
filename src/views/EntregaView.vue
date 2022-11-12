@@ -15,7 +15,7 @@
 
             <div class="descripcion">
                 Contactar con el profesor especialista
-                <img src="public/group.png" />
+                <img src="/group.png" />
             </div>
 
         </div>
@@ -54,7 +54,7 @@
 
             <div class="entrega col-5">
                 <strong>Estado de la entrega</strong>
-                <img src="public/chek.png" />
+                <img src="/chek.png" />
 
                 <div class="archivo">
                     <label for="archivo-entrega"></label>
@@ -97,7 +97,7 @@
 
                 <div class="ayuda">
                     Ayuda
-                    <img src="public/pregunta.png" />
+                    <img src="/pregunta.png" />
                 </div>
 
             </div>

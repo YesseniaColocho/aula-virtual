@@ -14,7 +14,7 @@
 
             <div class="descripcion">
                 <strong>índex</strong>
-                <img src="public/informacion.png" />
+                <img src="/informacion.png" />
             </div>
 
         </div>
@@ -25,7 +25,7 @@
 
                 <div class="profesor">
                     <strong>Profesor especialista:</strong><br> Andres Garrido B.
-                    <img src="public/group.png">
+                    <img src="/group.png">
                 </div>
 
                 <div class="boton-notas">
@@ -105,7 +105,7 @@
 
                         <div class="modulos">
                             <span class="linea-color">Módulo 1</span>
-                            <img src="public/flecha-abajo.png" />
+                            <img src="/flecha-abajo.png" />
                         </div>
 
                         <div>
@@ -119,12 +119,12 @@
 
                         <div class="modulos">
                             Módulo 2
-                            <img src="public/flecha.png" />
+                            <img src="/flecha.png" />
                         </div>
 
                         <div class="modulos">
                             Módulo 3
-                            <img src="public/flecha.png" />
+                            <img src="/flecha.png" />
                         </div>
 
                     </div>

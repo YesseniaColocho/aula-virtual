@@ -2,13 +2,13 @@
     <div class="fondo-barra">
         <div class="barra">
             <div class="primera-imagen">
-                <img src="public/figma.png" />
+                <img src="/figma.png" />
             </div>
 
             <div class="imagenes">
-                <img src="public/ayuda.png" />
-                <img src="public/Avion.png" />
-                <img src="public/group 3.png" />
+                <img src="/ayuda.png" />
+                <img src="/avion.png" />
+                <img src="/group3.png" />
             </div>
         </div>
     </div>

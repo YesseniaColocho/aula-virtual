@@ -29,7 +29,7 @@
             <div class="botones-selecionadores col-7">
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
-                        <img src="public/icono1.png" />
+                        <img src="/icono1.png" />
                     </div>
                     <div>
                         Seleccionar todos
@@ -38,7 +38,7 @@
 
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
-                        <img src="public/icono2.png" />
+                        <img src="/icono2.png" />
                     </div>
                     <div>
                         Refrescar
@@ -47,7 +47,7 @@
 
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
-                        <img src="public/icono3.png" />
+                        <img src="/icono3.png" />
                     </div>
                     <div>
                         Marcar como leído
@@ -56,7 +56,7 @@
 
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
-                        <img src="public/icono4.png" />
+                        <img src="/icono4.png" />
                     </div>
                     <div>
                         Marcar como no leído
@@ -65,7 +65,7 @@
 
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
-                        <img src="public/icono5.png" />
+                        <img src="/icono5.png" />
                     </div>
                     <div>
                         Papelera
@@ -84,22 +84,22 @@
             <div class="opciones-de-enviado col-3">
                 <div class="recibidos">
                     Recibidos
-                    <img src="public/bandeja.png" />
+                    <img src="/bandeja.png" />
                 </div>
 
                 <div class="recibidos">
                     Enviados
-                    <img src="public/carta.png" />
+                    <img src="/carta.png" />
                 </div>
 
                 <div class="recibidos">
                     Papelera
-                    <img src="public/papelera.png" />
+                    <img src="/papelera.png" />
                 </div>
 
                 <div class="recibidos">
                     Guardados
-                    <img src="public/envio.png" />
+                    <img src="/envio.png" />
                 </div>
             </div>
 
@@ -117,8 +117,8 @@
         </div>
 
         <div class="botones-siguente-pagina">
-            <img src="public/botonizquierda.png" />
-            <img src="public/botonderecha.png" />
+            <img src="/botonizquierda.png" />
+            <img src="/botonderecha.png" />
         </div>
 
         <BarraInferior></BarraInferior>
