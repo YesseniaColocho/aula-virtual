@@ -15,13 +15,13 @@
 
                 <div class="mes">
                     Mes
-                    <img src="flecha.png" />
+                    <img src="/flecha.png" />
                     Octubre
                 </div>
 
                 <div class="boton-evento">
                     <strong>Nuevo Evento</strong>
-                    <img src="cruz.png" />
+                    <img src="/cruz.png" />
                 </div>
 
                 <vue-cal class="vuecal--date-picker" xsmall hide-view-selector :time="false" :transitions="false"

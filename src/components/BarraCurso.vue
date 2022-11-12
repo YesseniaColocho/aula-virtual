@@ -3,7 +3,7 @@
         
         <div>Progreso del año escolar</div>
 
-        <img src="public/marcador.png" class="marcador" :style="`left:${progreso}%`" >
+        <img src="/marcador.png" class="marcador" :style="`left:${progreso}%`" >
 
         <div class="barra">
             <div class="progreso" :style="`width: ${progreso}%`">

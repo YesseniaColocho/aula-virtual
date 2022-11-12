@@ -36,7 +36,7 @@
               Carmen Gutierrez Aros
             </div>
 
-            <img class="correo" src="public/group.png" />
+            <img class="correo" src="/group.png" />
           </div>
 
 
@@ -57,7 +57,7 @@
 
 
           <div class="calificaciones">
-            <img src="public/star.png" />
+            <img src="/star.png" />
             Calificaciones
           </div>
         </div>
@@ -76,7 +76,7 @@
 
               <div class="composicion">
                 <span class="linea-color">Composición</span>
-                <img src="public/flecha-abajo.png" />
+                <img src="/flecha-abajo.png" />
               </div>
 
               <ul class="lista lineas-lista">
@@ -88,22 +88,22 @@
 
               <div>
                 Componentes visuales de una pieza<br>gráfica: la imagen
-                <img src="public/flecha.png" />
+                <img src="/flecha.png" />
               </div>
 
               <div>
                 Componentes visuales de una pieza <br>gráfica: copy
-                <img src="public/flecha.png" />
+                <img src="/flecha.png" />
               </div>
 
               <div>
                 Utilización de la composición para potenciar <br>la idea creativa
-                <img src="public/flecha.png" />
+                <img src="/flecha.png" />
               </div>
 
               <div>
                 Componentes visuales de una pieza gráfica:<br> el logotipo
-                <img src="public/flecha.png" />
+                <img src="/flecha.png" />
               </div>
 
             </div>
@@ -113,7 +113,7 @@
           </div>
 
           <div class="col-6">
-            <img src="public/vector.png" />
+            <img src="/vector.png" />
 
             <div class="referencias-año-escolar">
               Recursos para el año escolar
