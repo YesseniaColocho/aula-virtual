@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ComposicionView from '../views/ComposicionView.vue'
 import EntregaView from '../views/EntregaView.vue'
 import AreaView from '../views/AreaView.vue'
-
+import CalendarioView from '../views/CalendarioView.vue'
 import MensajeriaView from '../views/MensajeriaView.vue'
 
 const router = createRouter({
@@ -33,7 +33,12 @@ const router = createRouter({
       path: '/mensajeria',
       name: 'mensajeria',
       component: MensajeriaView
-    }
+    },
+  {
+    path: '/calendario',
+    name: 'calendario',
+    component: CalendarioView
+  }
   ]
 })
 
