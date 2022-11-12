@@ -59,12 +59,12 @@ import BarraInferior from '../components/BarraInferior.vue';
 
 <style lang="scss">
 .barra-izquierda {
-    .vuecal__title-bar {
-        display: none;
-    }
-
     .vuecal {
         box-shadow: none;
+
+        &__title-bar {
+            display: none;
+        }
 
         &__cell {
             &--today {
@@ -98,16 +98,18 @@ import BarraInferior from '../components/BarraInferior.vue';
 }
 
 .barra-derecha {
-    .vuecal{
+    .vuecal {
         box-shadow: none;
-        &__cell--selected{
+
+        &__cell--selected {
             background-color: #7deaf234;
         }
-        &__title-bar{
+
+        &__title-bar {
             background-color: #60A4FF;
         }
     }
-    
+
 }
 </style>
 
@@ -148,7 +150,8 @@ import BarraInferior from '../components/BarraInferior.vue';
             top: 10%;
         }
     }
-    .recordatorios{
+
+    .recordatorios {
         margin-top: 50px;
         background: lightgray;
         height: 50px;
@@ -157,13 +160,15 @@ import BarraInferior from '../components/BarraInferior.vue';
         align-items: center;
         margin-bottom: 20px;
     }
-    .texto{
+
+    .texto {
         width: 80%;
         padding-left: 10px;
         font-size: small;
     }
 }
-div.barra-derecha{
+
+div.barra-derecha {
     padding-left: 20px;
 }
 </style>

@@ -34,11 +34,11 @@ const router = createRouter({
       name: 'mensajeria',
       component: MensajeriaView
     },
-  {
-    path: '/calendario',
-    name: 'calendario',
-    component: CalendarioView
-  }
+    {
+      path: '/calendario',
+      name: 'calendario',
+      component: CalendarioView
+    }
   ]
 })
 
