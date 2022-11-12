@@ -42,8 +42,8 @@
 
           <div class="informacion-clases">
 
-            <ul class="lista-elementos">
-              <li>Tablón de profesor <div class="recuadro">2</div>
+            <ul class="lista-elementos ">
+              <li>Tablón de profesor<div class="recuadro">2</div>
               </li>
               <li>Recursos de estudiantes<div class="recuadro">10</div>
               </li>
@@ -75,14 +75,14 @@
             <div class="lado-izquierdo">
 
               <div class="composicion">
-                Composición
+                <span class="linea-color">Composición</span>
                 <img src="public/flecha-abajo.png" />
               </div>
 
-              <ul class="lista">
-                <li>Conocimientos de la composición</li>
-                <li>Cuerpo y estructura</li>
-                <li>3D</li>
+              <ul class="lista lineas-lista">
+                <li> <span>Conocimientos de la composición</span></li>
+                <li><span>Cuerpo y estructura</span></li>
+                <li><span>3D</span></li>
 
               </ul>
 
@@ -266,7 +266,9 @@ import BarraCurso from '../components/BarraCurso.vue';
   align-items: center;
   font-weight: 500;
 }
-.mis-cursos, .titulo{
+
+.mis-cursos,
+.titulo {
   margin-top: 40px;
 }
 
@@ -292,7 +294,7 @@ import BarraCurso from '../components/BarraCurso.vue';
   }
 
   div.composicion {
-    justify-content: unset
+    justify-content: unset;
   }
 }
 

@@ -74,10 +74,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  .row{
+  .row {
     margin: 0;
   }
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -97,4 +98,32 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(135, 135, 135);
+}
+
+.linea-color {
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to right, #60A4FF, #7DEBF2);
+  border-bottom: 3px solid;
+}
+
+ul.lineas-lista {
+  li span::before {
+    content: "";
+    height: 160%;
+    width: 10px;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to right, #60A4FF, #7DEBF2);
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    position: absolute;
+    bottom: 10px;
+    left: -15px;
+    z-index: -1;
+  }
+
+  li:first-child span::before {
+    height: 150%;
+  }
 }
