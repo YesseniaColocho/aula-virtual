@@ -235,7 +235,7 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .calificaciones {
-  background: linear-gradient(to right, #7DEBF2, #60A4FF, );
+  background: $gradiente-azul;
   margin-left: 20px;
   display: flex;
   justify-content: center;
@@ -254,7 +254,7 @@ import Fecha from '../components/Fecha.vue';
   background: grey;
   height: 70px;
   border-radius: 3px;
-  background: linear-gradient(to right, #7DEBF2, #60A4FF);
+  background: $gradiente-azul;
   font-size: x-large;
   display: flex;
   justify-content: center;
@@ -298,7 +298,7 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .referencias-año-escolar {
-  background: linear-gradient(to right, #7DEBF2, #60A4FF);
+  background: $gradiente-azul;
   margin-top: 7px;
   height: 50px;
   display: flex;

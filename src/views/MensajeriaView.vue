@@ -211,7 +211,7 @@ export default {
         padding: 20px;
 
         .mensaje {
-            background: linear-gradient(to right, #60A4FF, #7DEBF2);
+            background: $gradiente-azul;
             height: 50px;
             border-radius: 3px;
             display: flex;
@@ -268,7 +268,7 @@ export default {
         margin-bottom: 20px;
 
         &:first-child {
-            background: linear-gradient(to right, #60A4FF, #7DEBF2);
+            background: $gradiente-azul;
         }
 
     }

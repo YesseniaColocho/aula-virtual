@@ -204,7 +204,7 @@ import Fecha from '../components/Fecha.vue';
         .boton-mas {
 
             span {
-                background: linear-gradient(to right, #76B1FF, #7DEBF2);
+                background: $gradiente-azul;
                 height: 30px;
                 width: 30px;
                 border-radius: 3px;
@@ -215,7 +215,7 @@ import Fecha from '../components/Fecha.vue';
         }
 
         .boton-archivo {
-            background: linear-gradient(to right, #76B1FF, #7DEBF2);
+            background: $gradiente-azul;
             padding: 10px 30px;
         }
     }

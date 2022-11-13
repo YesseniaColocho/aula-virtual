@@ -31,7 +31,7 @@
 
 <style scoped lang="scss">
 .fondo-barra {
-    background: linear-gradient(to right, #7DEBF2, #60A4FF);
+    background: $gradiente-azul;
     padding-bottom: 2px;
     margin-bottom: 20px;
 
