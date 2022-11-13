@@ -35,8 +35,9 @@
               <br>
               Carmen Gutierrez Aros
             </div>
-
-            <img class="correo" src="/group.png" />
+            <a href="/mensajeria">
+              <img class="correo" src="/group.png" />
+            </a>
           </div>
 
 
@@ -75,7 +76,9 @@
             <div class="lado-izquierdo">
 
               <div class="composicion">
-                <span class="linea-color">Composición</span>
+                <a href="/composicion">
+                  <span class="linea-color">Composición</span>
+                </a>
                 <img src="/flecha-abajo.png" />
               </div>
 
@@ -295,6 +298,10 @@ import BarraCurso from '../components/BarraCurso.vue';
 
   div.composicion {
     justify-content: unset;
+
+    a {
+      color: initial;
+    }
   }
 }
 

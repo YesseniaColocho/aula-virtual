@@ -102,10 +102,10 @@
             <div class="col-1"></div>
 
             <div class="adminitracion col-6">
-                <div>
-                    <strong>Contactar con adminitracion</strong>
+                <a href="/mensajeria">
+                    <span>Contactar con adminitracion</span>
                     <img src="/group.png" />
-                </div>
+                </a>
             </div>
         </div>
 

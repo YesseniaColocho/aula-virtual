@@ -14,8 +14,10 @@
             </div>
 
             <div class="descripcion">
-                Contactar con el profesor especialista
-                <img src="/group.png" />
+                <a href="/mensajeria">
+                    Contactar con el profesor especialista
+                    <img src="/group.png" />
+                </a>
             </div>
 
         </div>
@@ -154,6 +156,9 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 
     .descripcion {
         margin-top: 45px;
+        a{
+            color: initial;
+        }
     }
 }
 
