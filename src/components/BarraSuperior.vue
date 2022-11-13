@@ -9,6 +9,9 @@
 
             <div class="imagenes">
                 <img src="/ayuda.png" />
+                <a href="/calendario">
+                    <img src="/calendario.png" />
+                </a>
                 <a href="/mensajeria">
                     <img src="/avion.png" />
                 </a>
@@ -48,12 +51,11 @@
         display: flex;
         align-items: center;
 
-        img {
+        >*{
             margin-left: 30px;
-
         }
 
-        img:last-child {
+        >*:last-child {
             margin-right: 30px;
         }
     }
