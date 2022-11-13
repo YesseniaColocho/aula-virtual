@@ -2,13 +2,20 @@
     <div class="fondo-barra">
         <div class="barra">
             <div class="primera-imagen">
-                <img src="/figma.png" />
+                <a href="/">
+                    <img src="/figma.png" />
+                </a>
             </div>
 
             <div class="imagenes">
                 <img src="/ayuda.png" />
-                <img src="/avion.png" />
-                <img src="/group3.png" />
+                <a href="/mensajeria">
+                    <img src="/avion.png" />
+                </a>
+                <a href="/areapersonal">
+                    <img src="/group3.png" />
+                </a>
+
             </div>
         </div>
     </div>

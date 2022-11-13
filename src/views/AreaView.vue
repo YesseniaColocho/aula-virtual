@@ -101,11 +101,11 @@
 
             <div class="col-1"></div>
 
-            <div class="adminitracion col-6">
-                <div>
-                    <strong>Contactar con adminitracion</strong>
+            <div class="administracion col-6">
+                <a href="/mensajeria">
+                    <span>Contactar con administracion</span>
                     <img src="/group.png" />
-                </div>
+                </a>
             </div>
         </div>
 
@@ -251,7 +251,7 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     }
 }
 
-.adminitracion {
+.administracion {
     padding-left: 20px;
 
 

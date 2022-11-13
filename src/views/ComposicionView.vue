@@ -25,7 +25,9 @@
 
                 <div class="profesor">
                     <strong>Profesor especialista:</strong><br> Andres Garrido B.
-                    <img src="/group.png">
+                    <a href="/mensajeria">
+                        <img src="/group.png">
+                    </a>
                 </div>
 
                 <div class="boton-notas">
@@ -86,7 +88,7 @@
                 <div class="row">
                     <div class="boton-informativo col-12">
                         <div>
-                            <strong>Ejercicio en curso:</strong> <span>Conocimientos de la composición 1</span>
+                            <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición 1</a>
                         </div>
 
                         <div class="entrega">
@@ -322,6 +324,10 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 
         span {
             margin-left: 10px;
+        }
+        a{
+            color:initial;
+            border-bottom: 1px black solid;
         }
     }
 
