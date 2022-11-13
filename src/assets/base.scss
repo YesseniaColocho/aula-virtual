@@ -103,7 +103,7 @@ body {
 .linea-color {
   border-image-slice: 1;
   border-width: 3px;
-  border-image-source: linear-gradient(to right, #60A4FF, #7DEBF2);
+  border-image-source: $gradiente-azul;
   border-bottom: 3px solid;
 }
 
@@ -114,7 +114,7 @@ ul.lineas-lista {
     width: 10px;
     border-image-slice: 1;
     border-width: 3px;
-    border-image-source: linear-gradient(to right, #60A4FF, #7DEBF2);
+    border-image-source: $gradiente-azul;
     border-bottom: 3px solid;
     border-left: 3px solid;
     position: absolute;
@@ -134,4 +134,5 @@ ul.lineas-lista {
   margin-right: 30px;
   margin-top: 20px;
   font-size: small;
+
 }

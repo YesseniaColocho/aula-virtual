@@ -256,7 +256,7 @@ import Fecha from '../components/Fecha.vue';
     }
 
     .boton-notas {
-        background: linear-gradient(to right, #60A4FF, #7DEBF2);
+        background: $gradiente-azul;
         margin: 30px 0 15px 20px;
         height: 70px;
         display: flex;
@@ -306,7 +306,7 @@ import Fecha from '../components/Fecha.vue';
     padding-left: 40px;
 
     .boton-informativo {
-        background: linear-gradient(to right, #60A4FF, #7DEBF2);
+        background: $gradiente-azul;
         display: flex;
         justify-content: space-between;
         height: 70px;

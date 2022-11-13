@@ -65,7 +65,7 @@ export default {
 }
 
 .progreso {
-    background: linear-gradient(to right, #60A4FF,#7DEBF2);
+    background: $gradiente-azul;
     height: 100%;
 }
 

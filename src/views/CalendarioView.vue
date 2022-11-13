@@ -126,7 +126,7 @@ import Fecha from '../components/Fecha.vue';
 
         .boton-evento {
             margin-top: 30px;
-            background: linear-gradient(to right, #60A4FF, #7DEBF2);
+            background: $gradiente-azul;
             height: 50px;
             border-radius: 3px;
             display: flex;
