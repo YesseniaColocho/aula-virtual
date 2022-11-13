@@ -3,7 +3,7 @@
         <BarraSuperior></BarraSuperior>
 
         <div class="fecha">
-            Fecha:06/10/2022
+            <Fecha></Fecha>
         </div>
 
         <div class="titulos">
@@ -115,6 +115,7 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+import Fecha from '../components/Fecha.vue';
 
 
 </script>
@@ -126,19 +127,10 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     }
 }
 
-.fecha {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: small;
-
-}
-
 .titulos {
     display: flex;
     justify-content: space-between;
-    margin: 30px 20px 0 20px;
+    margin: 0 20px;
     margin-bottom: 100px;
 
     h5 {
@@ -156,7 +148,8 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 
     .descripcion {
         margin-top: 45px;
-        a{
+
+        a {
             color: initial;
         }
     }

@@ -2,10 +2,6 @@
     <main class="area">
         <BarraSuperior></BarraSuperior>
 
-        <div class="fecha">
-            Fecha:06/10/2022
-        </div>
-
         <div class="area-personal row">
             <div class="titulos col-3">
                 <div class="titulo">
@@ -142,15 +138,6 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 </script>
 
 <style scoped lang="scss">
-.fecha {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: small;
-
-}
-
 .area-personal {
     .titulos {
         display: flex;
@@ -166,10 +153,11 @@ import BarraSuperior from '../components/BarraSuperior.vue';
     .alumno-foto {
         display: flex;
         justify-content: center;
-        align-items:flex-start;
+        align-items: flex-start;
 
         .foto-wrapper {
             height: 80%;
+
             .circulo-foto {
                 height: 100%;
                 overflow: hidden;

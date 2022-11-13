@@ -3,7 +3,7 @@
         <BarraSuperior></BarraSuperior>
 
         <div class="fecha">
-            Fecha:06/10/2022
+            <Fecha></Fecha>
         </div>
 
         <div class="titulos">
@@ -88,7 +88,8 @@
                 <div class="row">
                     <div class="boton-informativo col-12">
                         <div>
-                            <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición 1</a>
+                            <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición
+                                1</a>
                         </div>
 
                         <div class="entrega">
@@ -209,24 +210,16 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+import Fecha from '../components/Fecha.vue';
 
 
 </script>
 
 <style scoped lang="scss">
-.fecha {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: small;
-
-}
-
 .titulos {
     display: flex;
     justify-content: space-between;
-    margin: 30px 20px 0 20px;
+    margin: 0 20px;
 
     h5 {
         color: rgb(179, 179, 179);
@@ -325,8 +318,9 @@ import BarraSuperior from '../components/BarraSuperior.vue';
         span {
             margin-left: 10px;
         }
-        a{
-            color:initial;
+
+        a {
+            color: initial;
             border-bottom: 1px black solid;
         }
     }

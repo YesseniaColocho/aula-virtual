@@ -110,7 +110,7 @@ body {
 ul.lineas-lista {
   li span::before {
     content: "";
-    height: 160%;
+    height: calc(100% + 30px);
     width: 10px;
     border-image-slice: 1;
     border-width: 3px;
@@ -124,6 +124,14 @@ ul.lineas-lista {
   }
 
   li:first-child span::before {
-    height: 150%;
+    height: calc(100% + 10px);
   }
+}
+
+.fecha {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-size: small;
 }

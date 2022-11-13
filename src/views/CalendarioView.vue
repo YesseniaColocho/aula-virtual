@@ -1,10 +1,6 @@
 <template>
-    <main>
+    <main class="calendario">
         <BarraSuperior></BarraSuperior>
-
-        <div class="fecha">
-            Fecha:06/10/2022
-        </div>
 
         <div class="row">
             <div class="barra-izquierda col-2">
@@ -54,6 +50,7 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 import VueCal from 'vue-cal';
 import 'vue-cal/dist/vuecal.css';
 import BarraInferior from '../components/BarraInferior.vue';
+import Fecha from '../components/Fecha.vue';
 
 </script>
 
@@ -114,61 +111,55 @@ import BarraInferior from '../components/BarraInferior.vue';
 </style>
 
 <style scoped lang="scss">
-.fecha {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: small;
+.calendario {
 
-}
+    .barra-izquierda {
+        .titulo {
+            margin-bottom: 30px;
+        }
 
-.barra-izquierda {
-    .titulo {
-        margin-bottom: 30px;
-    }
+        .mes {
+            img {
+                margin: 0 5px;
+            }
+        }
 
-    .mes {
-        img {
-            margin: 0 5px;
+        .boton-evento {
+            margin-top: 30px;
+            background: linear-gradient(to right, #60A4FF, #7DEBF2);
+            height: 50px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+
+            img {
+                position: absolute;
+                left: 93%;
+                top: 10%;
+            }
+        }
+
+        .recordatorios {
+            margin-top: 50px;
+            background: lightgray;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .texto {
+            width: 80%;
+            padding-left: 10px;
+            font-size: small;
         }
     }
 
-    .boton-evento {
-        margin-top: 30px;
-        background: linear-gradient(to right, #60A4FF, #7DEBF2);
-        height: 50px;
-        border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-
-        img {
-            position: absolute;
-            left: 93%;
-            top: 10%;
-        }
+    div.barra-derecha {
+        padding-left: 20px;
     }
-
-    .recordatorios {
-        margin-top: 50px;
-        background: lightgray;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .texto {
-        width: 80%;
-        padding-left: 10px;
-        font-size: small;
-    }
-}
-
-div.barra-derecha {
-    padding-left: 20px;
 }
 </style>

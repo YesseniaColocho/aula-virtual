@@ -3,7 +3,7 @@
     <BarraSuperior></BarraSuperior>
 
     <div class="fecha">
-      Fecha:06/10/2022
+      <Fecha></Fecha>
     </div>
     <div class="container">
       <div class="row">
@@ -163,6 +163,7 @@
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import BarraCurso from '../components/BarraCurso.vue';
+import Fecha from '../components/Fecha.vue';
 
 //Aqui van la importaciones de componentes
 </script>
@@ -170,15 +171,6 @@ import BarraCurso from '../components/BarraCurso.vue';
 <style scoped lang="scss">
 .container {
   max-width: none;
-}
-
-.fecha {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
-  margin-top: 20px;
-  font-size: small;
-
 }
 
 .titulo {
