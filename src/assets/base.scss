@@ -127,3 +127,11 @@ ul.lineas-lista {
     height: 150%;
   }
 }
+
+.fecha {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-size: small;
+}

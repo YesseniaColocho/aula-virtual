@@ -30,6 +30,7 @@
 .fondo-barra {
     background: linear-gradient(to right, #7DEBF2, #60A4FF);
     padding-bottom: 2px;
+    margin-bottom: 20px;
 
     .barra {
         background: #F4F4F4;

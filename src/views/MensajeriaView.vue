@@ -3,7 +3,7 @@
         <BarraSuperior></BarraSuperior>
 
         <div class="fecha">
-            Fecha:06/10/2022
+            <Fecha></Fecha>
         </div>
 
         <div class="titulos">
@@ -107,9 +107,9 @@
 
                 <div v-for="email in emails" class="informacion-email">
                     <input class="boton-check" type="checkbox" />
-                    <span>{{email.enviar}}</span>
-                    <span>{{email.asunto}}</span>
-                    <span>{{email.fecha}}</span>
+                    <span>{{ email.enviar }}</span>
+                    <span>{{ email.asunto }}</span>
+                    <span>{{ email.fecha }}</span>
                 </div>
 
 
@@ -128,6 +128,7 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+import Fecha from '../components/Fecha.vue';
 </script>
 
 <script>
@@ -167,25 +168,17 @@ export default {
                     fecha: "Viernes 17/08/2022",
                 }
             ]
-        }
-    }
+        };
+    },
+    components: { Fecha }
 }
 </script>
 
 <style scoped lang="scss">
-.fecha {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: small;
-
-}
-
 .titulos {
     display: flex;
     justify-content: space-between;
-    margin: 30px 20px 0 20px;
+    margin: 0 20px;
     margin-bottom: 100px;
 
     h2 {
