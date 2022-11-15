@@ -19,14 +19,14 @@
         </div>
 
         <div class="barra-superior row">
-            <div class="boton col-3">
+            <div class="boton col-md-3">
                 <div class="mensaje">
                     Nuevo mensaje
                 </div>
 
             </div>
 
-            <div class="botones-selecionadores col-7">
+            <div class="botones-selecionadores col-md-7">
                 <div class="selecionadores">
                     <div class="cuadro-imagen">
                         <img src="/icono1.png" />
@@ -75,35 +75,35 @@
 
             </div>
 
-            <div class="pagina col-2">
+            <div class="pagina col-md-2">
                 1- 4/4
             </div>
         </div>
 
         <div class="parte-abajo row">
-            <div class="opciones-de-enviado col-3">
-                <div class="recibidos">
+            <div class="opciones-de-enviado col-md-3">
+                <div class="recibidos col-12 col-md-9">
                     Recibidos
                     <img src="/bandeja.png" />
                 </div>
 
-                <div class="recibidos">
+                <div class="recibidos col-12 col-md-9">
                     Enviados
                     <img src="/carta.png" />
                 </div>
 
-                <div class="recibidos">
+                <div class="recibidos col-12 col-md-9">
                     Papelera
                     <img src="/papelera.png" />
                 </div>
 
-                <div class="recibidos">
+                <div class="recibidos col-12 col-md-9">
                     Guardados
                     <img src="/envio.png" />
                 </div>
             </div>
 
-            <div class="mensajes-recibidos col-9">
+            <div class="mensajes-recibidos col-md-9">
 
                 <div v-for="email in emails" class="informacion-email">
                     <input class="boton-check" type="checkbox" />
@@ -258,7 +258,6 @@ export default {
     .recibidos {
 
         height: 50px;
-        width: 70%;
         border-radius: 3px;
         font-size: large;
         display: flex;

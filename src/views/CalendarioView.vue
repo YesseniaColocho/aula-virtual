@@ -3,7 +3,7 @@
         <BarraSuperior></BarraSuperior>
 
         <div class="row">
-            <div class="barra-izquierda col-2">
+            <div class="barra-izquierda col-md-2">
 
                 <div class="titulo">
                     <h2>Calendario</h2>
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="barra-derecha col-10">
+            <div class="barra-derecha col-md-10">
                 <vue-cal :disable-views="['years', 'year']" :time-from="7 * 60" :time-to="20 * 60" />
             </div>
 

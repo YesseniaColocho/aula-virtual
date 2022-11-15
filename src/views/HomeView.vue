@@ -7,13 +7,13 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="curso-cursos-progreso col-5">
+        <div class="curso-cursos-progreso col-8 col-md-5 ">
 
           <h3 class="titulo">Dirección de Arte y Creatividad Audiovisual</h3>
           <h4 class="año-escolar">año escolar 2022/2023</h4>
 
         </div>
-        <div class="col-2">
+        <div class="col-4 col-md-2 ">
 
           <div class="mis-cursos">
             Mis cursos
@@ -21,14 +21,14 @@
 
         </div>
 
-        <div class="col-5">
+        <div class="col-md-5">
           <BarraCurso></BarraCurso>
         </div>
       </div>
 
       <div class="row">
 
-        <div class=" col-3">
+        <div class=" col-12 col-md-3">
           <div class="info-tutora">
             <div class="tutora">
               Mi tutora:
@@ -63,13 +63,13 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-hidden col-md-2">
 
         </div>
 
-        <div class="linea row col-7">
+        <div class="linea row col-md-7">
 
-          <div class=" asignatura col-6">
+          <div class=" asignatura col-md-6">
 
             <strong>Asignatura</strong>
 
@@ -115,7 +115,7 @@
 
           </div>
 
-          <div class="col-6">
+          <div class="col-md-6">
             <img src="/vector.png" />
 
             <div class="referencias-año-escolar">
@@ -177,6 +177,7 @@ import Fecha from '../components/Fecha.vue';
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
+  text-align: right;
 
 }
 

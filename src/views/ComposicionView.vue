@@ -21,7 +21,7 @@
 
         <div class="row">
 
-            <div class="parte-izquierda col-3">
+            <div class="parte-izquierda col-md-3">
 
                 <div class="profesor">
                     <strong>Profesor especialista:</strong><br> Andres Garrido B.
@@ -83,10 +83,10 @@
 
             </div>
 
-            <div class=" parte-derecha col-9 ">
+            <div class=" parte-derecha col-md-9 ">
 
                 <div class="row">
-                    <div class="boton-informativo col-12">
+                    <div class="boton-informativo col-md-12">
                         <div>
                             <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición
                                 1</a>
@@ -102,7 +102,7 @@
 
                 <div class="row">
 
-                    <div class="informacion-asignatura col-4">
+                    <div class="informacion-asignatura col-md-4">
 
                         <strong>La asignatura</strong>
 
@@ -132,7 +132,7 @@
 
                     </div>
 
-                    <div class="recursos-modulo col-4">
+                    <div class="recursos-modulo col-md-4">
 
                         <strong>Recursos para el Módulo</strong>
 
@@ -149,7 +149,7 @@
                         </div>
                     </div>
 
-                    <div class="alumnado col-4">
+                    <div class="alumnado col-md-4">
                         <strong>Alumnos</strong>
 
                         <div class="informacion-alumnado">

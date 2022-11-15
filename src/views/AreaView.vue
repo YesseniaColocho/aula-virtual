@@ -3,14 +3,14 @@
         <BarraSuperior></BarraSuperior>
 
         <div class="area-personal row">
-            <div class="titulos col-3">
+            <div class="titulos col-md-3">
                 <div class="titulo">
                     <h2>Área personal</h2>
                     <h4>Cambio de datos y becas</h4>
                 </div>
             </div>
 
-            <div class="alumno-foto col-2">
+            <div class="alumno-foto col-md-2">
 
                 <div class="foto-wrapper">
                     <div class="circulo-foto">
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="cursos-alumno col-7">
+            <div class="cursos-alumno col-md-7">
                 <div class="matricula">
                     Cursos Matriculados 2022/2023
                 </div>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="datos-personales row">
-            <div class=" datos-izquierda col-5">
+            <div class=" datos-izquierda col-md-5">
                 <div class="nombre-input">
                     Nombre
                     <input class="boton-input" type="text" />
@@ -62,9 +62,9 @@
 
             </div>
 
-            <div class="col-1"></div>
+            <div class="col-md-1"></div>
 
-            <div class="parte-derecha col-6">
+            <div class="parte-derecha col-md-6">
                 <div class="nombre-input">
                     DNI
                     <input class="boton-input" type="text" />
@@ -83,7 +83,7 @@
         </div>
 
         <div class="row">
-            <div class="contrato col-5">
+            <div class="contrato col-md-5">
                 <div class="elementos-pdf">
                     <div class="matricula">
                         <strong>Matrícula</strong>
@@ -95,9 +95,9 @@
                 </div>
             </div>
 
-            <div class="col-1"></div>
+            <div class="col-md-1"></div>
 
-            <div class="administracion col-6">
+            <div class="administracion col-md-6">
                 <a href="/mensajeria">
                     <span>Contactar con administracion</span>
                     <img src="/group.png" />
@@ -106,7 +106,7 @@
         </div>
 
         <div class="row">
-            <div class="becas col-5">
+            <div class="becas col-md-5">
                 <div>
                     <strong>Becas solicitadas</strong>
                 </div>
