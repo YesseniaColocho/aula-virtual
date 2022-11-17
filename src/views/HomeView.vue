@@ -10,7 +10,7 @@
         <div class="curso-cursos-progreso col-8 col-md-5 ">
 
           <h3 class="titulo">Dirección de Arte y Creatividad Audiovisual</h3>
-          <h4 class="año-escolar">año escolar 2022/2023</h4>
+          <h4 class="ano-escolar">año escolar 2022/2023</h4>
 
         </div>
         <div class="col-4 col-md-2 ">
@@ -90,22 +90,30 @@
               </ul>
 
               <div>
-                Componentes visuales de una pieza<br>gráfica: la imagen
+                <span>
+                Componentes visuales de una pieza gráfica: la imagen
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Componentes visuales de una pieza <br>gráfica: copy
+                <span>
+                Componentes visuales de una pieza gráfica: copy
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Utilización de la composición para potenciar <br>la idea creativa
+                <span>
+                Utilización de la composición para potenciar la idea creativa
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Componentes visuales de una pieza gráfica:<br> el logotipo
+                <span>
+                Componentes visuales de una pieza gráfica: el logotipo
+              </span>
                 <img src="/flecha.png" />
               </div>
 
@@ -115,7 +123,7 @@
 
           </div>
 
-          <div class="col-md-6">
+          <div class="recursos col-md-6">
             <img src="/vector.png" />
 
             <div class="referencias-año-escolar">
@@ -178,14 +186,16 @@ import Fecha from '../components/Fecha.vue';
   display: flex;
   justify-content: flex-end;
   text-align: right;
-
+  @include media-breakpoint-down(md) { text-align: left;}
 }
 
-.año-escolar {
+.ano-escolar {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 100px;
+  @include media-breakpoint-down(md) { justify-content: flex-start;
+  margin-bottom: 50px; }
 }
 
 .info-tutora {
@@ -195,6 +205,7 @@ import Fecha from '../components/Fecha.vue';
   align-items: flex-end;
   padding-bottom: 20px;
   margin-left: 20px;
+  @include media-breakpoint-down(md) { margin-top: 100px; }
 }
 
 .tutora {
@@ -271,6 +282,8 @@ import Fecha from '../components/Fecha.vue';
 .linea {
   border-top: 1px black solid;
   padding-top: 30px;
+  @include media-breakpoint-down(md) { border-top: none;
+  margin-top: 10px;}
 }
 
 .lista {
@@ -282,11 +295,14 @@ import Fecha from '../components/Fecha.vue';
 
 .lado-izquierdo {
 
-  div {
+ > div {
     margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    > span {
+      width: 80%;
+    }
   }
 
   div.composicion {
@@ -309,10 +325,13 @@ import Fecha from '../components/Fecha.vue';
   border-radius: 3px;
   font-size: large;
 }
-
+.recursos{
+  @include media-breakpoint-down(md) {margin-top: 20px; }
+}
 .acceso-biblioteca {
   text-align: center;
   margin: 10px 0 100px 0;
+  @include media-breakpoint-down(md) { margin-bottom: 50px; }
 
 }
 
