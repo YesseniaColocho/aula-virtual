@@ -7,28 +7,28 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="curso-cursos-progreso col-5">
+        <div class="curso-cursos-progreso col-8 col-md-5 ">
 
           <h3 class="titulo">Dirección de Arte y Creatividad Audiovisual</h3>
-          <h4 class="año-escolar">año escolar 2022/2023</h4>
+          <h4 class="ano-escolar">año escolar 2022/2023</h4>
 
         </div>
-        <div class="col-2">
+        <div class="col-4 col-md-2 ">
 
-          <div class="mis-cursos">
+          <div class="mis-cursos boton-azul">
             Mis cursos
           </div>
 
         </div>
 
-        <div class="col-5">
+        <div class="col-md-5">
           <BarraCurso></BarraCurso>
         </div>
       </div>
 
       <div class="row">
 
-        <div class=" col-3">
+        <div class=" col-12 col-md-3">
           <div class="info-tutora">
             <div class="tutora">
               Mi tutora:
@@ -57,19 +57,19 @@
 
 
 
-          <div class="calificaciones">
+          <div class="calificaciones boton-azul">
             <img src="/star.png" />
             Calificaciones
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-hidden col-md-2">
 
         </div>
 
-        <div class="linea row col-7">
+        <div class="linea row col-md-7">
 
-          <div class=" asignatura col-6">
+          <div class=" asignatura col-md-6">
 
             <strong>Asignatura</strong>
 
@@ -90,22 +90,30 @@
               </ul>
 
               <div>
-                Componentes visuales de una pieza<br>gráfica: la imagen
+                <span>
+                Componentes visuales de una pieza gráfica: la imagen
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Componentes visuales de una pieza <br>gráfica: copy
+                <span>
+                Componentes visuales de una pieza gráfica: copy
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Utilización de la composición para potenciar <br>la idea creativa
+                <span>
+                Utilización de la composición para potenciar la idea creativa
+              </span>
                 <img src="/flecha.png" />
               </div>
 
               <div>
-                Componentes visuales de una pieza gráfica:<br> el logotipo
+                <span>
+                Componentes visuales de una pieza gráfica: el logotipo
+              </span>
                 <img src="/flecha.png" />
               </div>
 
@@ -115,10 +123,10 @@
 
           </div>
 
-          <div class="col-6">
+          <div class="recursos col-md-6">
             <img src="/vector.png" />
 
-            <div class="referencias-año-escolar">
+            <div class="referencias-año-escolar boton-azul">
               Recursos para el año escolar
             </div>
 
@@ -177,14 +185,17 @@ import Fecha from '../components/Fecha.vue';
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
-
+  text-align: right;
+  @include media-breakpoint-down(md) { text-align: left;}
 }
 
-.año-escolar {
+.ano-escolar {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 100px;
+  @include media-breakpoint-down(md) { justify-content: flex-start;
+  margin-bottom: 50px; }
 }
 
 .info-tutora {
@@ -194,6 +205,7 @@ import Fecha from '../components/Fecha.vue';
   align-items: flex-end;
   padding-bottom: 20px;
   margin-left: 20px;
+  @include media-breakpoint-down(md) { margin-top: 100px; }
 }
 
 .tutora {
@@ -217,6 +229,7 @@ import Fecha from '../components/Fecha.vue';
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .recuadro {
       background: lightgrey;
@@ -235,12 +248,11 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .calificaciones {
-  background: $gradiente-azul;
   margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  padding: 20px 5px;
   border-radius: 3px;
   font-size: x-large;
   font-weight: 500;
@@ -251,10 +263,8 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .mis-cursos {
-  background: grey;
-  height: 70px;
+  padding: 20px 5px;
   border-radius: 3px;
-  background: $gradiente-azul;
   font-size: x-large;
   display: flex;
   justify-content: center;
@@ -270,6 +280,8 @@ import Fecha from '../components/Fecha.vue';
 .linea {
   border-top: 1px black solid;
   padding-top: 30px;
+  @include media-breakpoint-down(md) { border-top: none;
+  margin-top: 10px;}
 }
 
 .lista {
@@ -281,11 +293,14 @@ import Fecha from '../components/Fecha.vue';
 
 .lado-izquierdo {
 
-  div {
+ > div {
     margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    > span {
+      width: 80%;
+    }
   }
 
   div.composicion {
@@ -298,9 +313,8 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .referencias-año-escolar {
-  background: $gradiente-azul;
   margin-top: 7px;
-  height: 50px;
+  padding: 15px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,10 +322,13 @@ import Fecha from '../components/Fecha.vue';
   border-radius: 3px;
   font-size: large;
 }
-
+.recursos{
+  @include media-breakpoint-down(md) {margin-top: 20px; }
+}
 .acceso-biblioteca {
   text-align: center;
   margin: 10px 0 100px 0;
+  @include media-breakpoint-down(md) { margin-bottom: 50px; }
 
 }
 

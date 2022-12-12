@@ -23,7 +23,7 @@
         </div>
 
         <div class="row">
-            <div class="especificaciones col-7">
+            <div class="especificaciones col-md-7">
 
                 <div class="titulo-ejercicio">
                     Especificaciones del ejercicio
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="entrega col-5">
+            <div class="entrega col-md-5">
                 <strong>Estado de la entrega</strong>
                 <img src="/chek.png" />
 
@@ -81,13 +81,13 @@
                 </div>
 
                 <div class="row">
-                    <div class="recursos col-6">
+                    <div class="recursos col-md-6">
                         Módulo 3 ejercicio 2
                     </div>
 
-                    <div class="col-1"></div>
+                    <div class="col-md-1"></div>
 
-                    <div class="recursos-adicionales col-5">
+                    <div class="recursos-adicionales col-md-5">
                         Recursos adicionales
                     </div>
 

@@ -86,6 +86,9 @@ export default {
     width: 100%;
     span{
         position: absolute;
+        transform: translate(-50%, 0);
+        text-align: center;
+        font-size: small;
     }
 }
 .marcador{

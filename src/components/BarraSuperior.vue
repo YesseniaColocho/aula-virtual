@@ -8,7 +8,9 @@
             </div>
 
             <div class="imagenes">
-                <img src="/ayuda.png" />
+                <span>
+                    <img src="/ayuda.png" />
+                </span>
                 <a href="/calendario">
                     <img src="/calendario.png" />
                 </a>
@@ -44,6 +46,12 @@
 
         .primera-imagen {
             margin-left: 20px;
+            a{
+                min-width: 50px;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -51,8 +59,12 @@
         display: flex;
         align-items: center;
 
-        >*{
+        >* {
             margin-left: 30px;
+            width: 25%;
+            img{
+                width: 100%;
+            }
         }
 
         >*:last-child {
