@@ -10,17 +10,8 @@
                 </div>
             </div>
 
-            <div class="alumno-foto col-md-2">
-
-                <div class="foto-wrapper">
-                    <div class="circulo-foto">
-                        <img src="/alumno.png" />
-                    </div>
-
-                    <div class="circulo-estado">
-                        <span></span>
-                    </div>
-                </div>
+            <div class="seccion-foto col-md-2">
+                <FotografiaAlumno></FotografiaAlumno>
             </div>
 
             <div class="cursos-alumno col-md-7">
@@ -133,16 +124,19 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
+import FotografiaAlumno from '../components/FotografiaAlumno.vue';
 
 
 </script>
 
 <style scoped lang="scss">
 .area-personal {
+    margin-bottom: 100px;
+
     .titulos {
         display: flex;
         justify-content: space-between;
-        margin: 30px 0 100px 0;
+        margin: 30px 0 0 0;
         padding: 0 20px;
 
         h2 {
@@ -150,36 +144,10 @@ import BarraSuperior from '../components/BarraSuperior.vue';
         }
     }
 
-    .alumno-foto {
+    .seccion-foto {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        .foto-wrapper {
-            height: 80%;
-
-            .circulo-foto {
-                height: 100%;
-                overflow: hidden;
-                border-radius: 100%;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-
-            .circulo-estado {
-                background: rgb(8, 172, 8);
-                border-radius: 100%;
-                position: absolute;
-                height: 20%;
-                width: 20%;
-                border: 3px white solid;
-                top: 76%;
-                left: 78%;
-            }
-        }
+        align-items: center;
+        max-width: 275px;
     }
 
     .cursos-alumno {

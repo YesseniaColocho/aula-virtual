@@ -18,7 +18,7 @@
                     <img src="/avion.png" />
                 </a>
                 <a href="/areapersonal">
-                    <img src="/group3.png" />
+                    <FotografiaAlumno></FotografiaAlumno>
                 </a>
 
             </div>
@@ -28,8 +28,16 @@
 </template>
 
 <script setup>
+import FotografiaAlumno from './FotografiaAlumno.vue';
+
 
 </script>
+
+<style lang="scss">
+.barra .alumno-foto{
+    width: 70px;
+}
+</style>
 
 <style scoped lang="scss">
 .fondo-barra {
