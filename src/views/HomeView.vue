@@ -15,7 +15,7 @@
         </div>
         <div class="col-4 col-md-2 ">
 
-          <div class="mis-cursos">
+          <div class="mis-cursos boton-azul">
             Mis cursos
           </div>
 
@@ -57,7 +57,7 @@
 
 
 
-          <div class="calificaciones">
+          <div class="calificaciones boton-azul">
             <img src="/star.png" />
             Calificaciones
           </div>
@@ -126,7 +126,7 @@
           <div class="recursos col-md-6">
             <img src="/vector.png" />
 
-            <div class="referencias-año-escolar">
+            <div class="referencias-año-escolar boton-azul">
               Recursos para el año escolar
             </div>
 
@@ -229,6 +229,7 @@ import Fecha from '../components/Fecha.vue';
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .recuadro {
       background: lightgrey;
@@ -247,12 +248,11 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .calificaciones {
-  background: $gradiente-azul;
   margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  padding: 20px 5px;
   border-radius: 3px;
   font-size: x-large;
   font-weight: 500;
@@ -263,10 +263,8 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .mis-cursos {
-  background: grey;
-  height: 70px;
+  padding: 20px 5px;
   border-radius: 3px;
-  background: $gradiente-azul;
   font-size: x-large;
   display: flex;
   justify-content: center;
@@ -315,9 +313,8 @@ import Fecha from '../components/Fecha.vue';
 }
 
 .referencias-año-escolar {
-  background: $gradiente-azul;
   margin-top: 7px;
-  height: 50px;
+  padding: 15px 5px;
   display: flex;
   justify-content: center;
   align-items: center;

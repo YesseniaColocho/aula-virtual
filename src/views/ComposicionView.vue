@@ -30,7 +30,7 @@
                     </a>
                 </div>
 
-                <div class="boton-notas">
+                <div class="boton-notas boton-azul">
                     <strong>Notas</strong>
                 </div>
 
@@ -86,7 +86,7 @@
             <div class=" parte-derecha col-md-9 ">
 
                 <div class="row">
-                    <div class="boton-informativo col-md-12">
+                    <div class="boton-informativo col-md-12 boton-azul">
                         <div>
                             <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición
                                 1</a>
@@ -256,9 +256,7 @@ import Fecha from '../components/Fecha.vue';
     }
 
     .boton-notas {
-        background: $gradiente-azul;
         margin: 30px 0 15px 20px;
-        height: 70px;
         display: flex;
         align-items: center;
         padding: 20px;
@@ -306,12 +304,10 @@ import Fecha from '../components/Fecha.vue';
     padding-left: 40px;
 
     .boton-informativo {
-        background: $gradiente-azul;
         display: flex;
         justify-content: space-between;
-        height: 70px;
         align-items: center;
-        padding: 0 30px;
+        padding: 20px 30px;
         border-radius: 3px;
 
 
