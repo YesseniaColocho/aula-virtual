@@ -20,7 +20,7 @@
 
         <div class="barra-superior row">
             <div class="boton col-md-3">
-                <div class="mensaje">
+                <div class="mensaje" @click="a">
                     Nuevo mensaje
                 </div>
 
@@ -129,6 +129,7 @@
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import Fecha from '../components/Fecha.vue';
+import {getUser} from '../javascript/services/apiMock';
 </script>
 
 <script>
@@ -170,7 +171,12 @@ export default {
             ]
         };
     },
-    components: { Fecha }
+    components: { Fecha },
+    methods: {
+        a(){
+            console.log(getUser())
+        }
+    }
 }
 </script>
 
