@@ -4,14 +4,25 @@ const aulaVirtual = {
     mensajes_foro: 0,
     estudiantes_conectados: 15,
     year_progress: {
-        percent: 10,
-        periods: [
-            "1r trimestre",
-            "2o trimestre",
-            "3r trimestre",
-            "Examenes finales"
-        ]
+        percent: 30,
+        periods: [{
+            texto: "1r trimestre",
+            porcentaje: 20
+        },
+        {
+            texto: "2o trimestre",
+            porcentaje: 40
+        },
+        {
+            texto: "3r trimestre",
+            porcentaje: 60
+        },
+        {
+            texto: "Examenes finales",
+            porcentaje: 90
+        }]
     }
 }
+
 
 export default aulaVirtual

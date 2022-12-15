@@ -9,8 +9,8 @@
       <div class="row">
         <div class="curso-cursos-progreso col-8 col-md-5 ">
 
-          <h3 class="titulo">Dirección de Arte y Creatividad Audiovisual</h3>
-          <h4 class="ano-escolar">año escolar 2022/2023</h4>
+          <h3 class="titulo">{{course.course_name}}</h3>
+          <h4 class="ano-escolar">año escolar {{course.year}}</h4>
 
         </div>
         <div class="col-4 col-md-2 ">
@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-md-5">
-          <BarraCurso></BarraCurso>
+          <BarraCurso :progreso="course.year_progress.percent" :marcadores="course.year_progress.periods"></BarraCurso>
         </div>
       </div>
 
@@ -141,9 +141,9 @@
             <div class="estudiantes">
 
               <ul class="lista-elementos">
-                <li>Foro <div class="recuadro">0</div>
+                <li>Foro <div class="recuadro">{{course.mensajes_foro}}</div>
                 </li>
-                <li> Estudiantes conectados<div class="recuadro">15</div>
+                <li> Estudiantes conectados<div class="recuadro">{{course.estudiantes_conectados}}</div>
                 </li>
                 <li>Lista de alumnos aula 3</li>
 
@@ -172,8 +172,19 @@ import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import BarraCurso from '../components/BarraCurso.vue';
 import Fecha from '../components/Fecha.vue';
+import {getCourse} from '../javascript/services/apiMock';
 
 //Aqui van la importaciones de componentes
+</script>
+
+<script>
+export default{
+  computed:{
+    course(){
+      return getCourse()
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
