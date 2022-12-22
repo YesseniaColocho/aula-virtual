@@ -29,8 +29,8 @@ const usuario = {
                     grade: "8",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 1: Conocimientos de la Composición 1",
-                        "Ejercicio 2: Estructura osea natural y animal. Conocmientos básicos"
+                        "Conocimientos de la Composición 1",
+                        "Estructura osea natural y animal. Conocmientos básicos"
                     ]
                 },
                 {
@@ -39,8 +39,8 @@ const usuario = {
                     grade: "5",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 3: Arte y modelado en nuevas tecnologías",
-                        "Ejercicio 4"
+                        "Arte y modelado en nuevas tecnologías",
+                        "Tema 4"
                     ]
                 },
                 {
@@ -49,8 +49,8 @@ const usuario = {
                     grade: "-",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 5",
-                        "Ejercicio 6"
+                        "Tema 5",
+                        "Tema 6"
                     ]
                 },
                 {
@@ -77,8 +77,8 @@ const usuario = {
                     grade: "7",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 1",
-                        "Ejercicio 2"
+                        "Tema 1",
+                        "Tema 2"
                     ]
                 },
                 {
@@ -87,8 +87,8 @@ const usuario = {
                     grade: "8",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 3",
-                        "Ejercicio 4"
+                        "Tema 3",
+                        "Tema 4"
                     ]
                 },
                 {
@@ -97,8 +97,8 @@ const usuario = {
                     grade: "-",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 5",
-                        "Ejercicio 6"
+                        "Tema 5",
+                        "Tema 6"
                     ]
                 },
                 {
@@ -125,8 +125,8 @@ const usuario = {
                     grade: "5",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 1",
-                        "Ejercicio 2"
+                        "Tema 1",
+                        "Tema 2"
                     ]
                 },
                 {
@@ -135,8 +135,8 @@ const usuario = {
                     grade: "4",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 3",
-                        "Ejercicio 4"
+                        "Tema 3",
+                        "Tema 4"
                     ]
                 },
                 {
@@ -145,8 +145,8 @@ const usuario = {
                     grade: "-",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 5",
-                        "Ejercicio 6"
+                        "Tema 5",
+                        "Tema 6"
                     ]
                 },
                 {
@@ -173,8 +173,8 @@ const usuario = {
                     grade: "9",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 1",
-                        "Ejercicio 2"
+                        "Tema 1",
+                        "Tema 2"
                     ]
                 },
                 {
@@ -183,8 +183,8 @@ const usuario = {
                     grade: "10",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 3",
-                        "Ejercicio 4"
+                        "Tema 3",
+                        "Tema 4"
                     ]
                 },
                 {
@@ -193,8 +193,8 @@ const usuario = {
                     grade: "-",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 5",
-                        "Ejercicio 6"
+                        "Tema 5",
+                        "Tema 6"
                     ]
                 },
                 {
@@ -221,8 +221,8 @@ const usuario = {
                     grade: "6",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 1",
-                        "Ejercicio 2"
+                        "Tema 1",
+                        "Tema 2"
                     ]
                 },
                 {
@@ -231,8 +231,8 @@ const usuario = {
                     grade: "8",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 3",
-                        "Ejercicio 4"
+                        "Tema 3",
+                        "Tema 4"
                     ]
                 },
                 {
@@ -241,8 +241,8 @@ const usuario = {
                     grade: "-",
                     assignments: [
                         "Introducción",
-                        "Ejercicio 5",
-                        "Ejercicio 6"
+                        "Tema 5",
+                        "Tema 6"
                     ]
                 },
                 {
