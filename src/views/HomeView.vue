@@ -305,7 +305,7 @@ export default{
 .lado-izquierdo {
 
  > div {
-    margin: 20px;
+  margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,8 +315,6 @@ export default{
   }
 
   div.composicion {
-    justify-content: unset;
-
     a {
       color: initial;
     }
