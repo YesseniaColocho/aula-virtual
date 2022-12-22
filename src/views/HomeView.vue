@@ -9,8 +9,8 @@
       <div class="row">
         <div class="curso-cursos-progreso col-8 col-md-5 ">
 
-          <h3 class="titulo">{{course.course_name}}</h3>
-          <h4 class="ano-escolar">año escolar {{course.year}}</h4>
+          <h3 class="titulo">{{ course.course_name }}</h3>
+          <h4 class="ano-escolar">año escolar {{ course.year }}</h4>
 
         </div>
         <div class="col-4 col-md-2 ">
@@ -75,50 +75,20 @@
 
             <div class="lado-izquierdo">
 
-              <div class="composicion">
-                <a href="/composicion">
-                  <span class="linea-color">Composición</span>
-                </a>
-                <img src="/flecha-abajo.png" />
-              </div>
+              <template v-for="asignatura in asignaturas">
+                <div class="composicion">
+                  <a href="/composicion">
+                    <span class="linea-color">{{ asignatura.name }}</span>
+                  </a>
+                  <img src="/flecha-abajo.png" />
+                </div>
 
-              <ul class="lista lineas-lista">
-                <li> <span>Conocimientos de la composición</span></li>
-                <li><span>Cuerpo y estructura</span></li>
-                <li><span>3D</span></li>
-
-              </ul>
-
-              <div>
-                <span>
-                Componentes visuales de una pieza gráfica: la imagen
-              </span>
-                <img src="/flecha.png" />
-              </div>
-
-              <div>
-                <span>
-                Componentes visuales de una pieza gráfica: copy
-              </span>
-                <img src="/flecha.png" />
-              </div>
-
-              <div>
-                <span>
-                Utilización de la composición para potenciar la idea creativa
-              </span>
-                <img src="/flecha.png" />
-              </div>
-
-              <div>
-                <span>
-                Componentes visuales de una pieza gráfica: el logotipo
-              </span>
-                <img src="/flecha.png" />
-              </div>
+                <ul class="lista lineas-lista">
+                  <li v-for="modulo in asignatura.modules"> <span>{{modulo.name}}</span></li>
+                </ul>
+              </template>
 
             </div>
-
 
 
           </div>
@@ -141,9 +111,9 @@
             <div class="estudiantes">
 
               <ul class="lista-elementos">
-                <li>Foro <div class="recuadro">{{course.mensajes_foro}}</div>
+                <li>Foro <div class="recuadro">{{ course.mensajes_foro }}</div>
                 </li>
-                <li> Estudiantes conectados<div class="recuadro">{{course.estudiantes_conectados}}</div>
+                <li> Estudiantes conectados<div class="recuadro">{{ course.estudiantes_conectados }}</div>
                 </li>
                 <li>Lista de alumnos aula 3</li>
 
@@ -172,16 +142,19 @@ import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import BarraCurso from '../components/BarraCurso.vue';
 import Fecha from '../components/Fecha.vue';
-import {getCourse} from '../javascript/services/apiMock';
+import { getCourse, getSubjects } from '../javascript/services/apiMock';
 
 //Aqui van la importaciones de componentes
 </script>
 
 <script>
-export default{
-  computed:{
-    course(){
+export default {
+  computed: {
+    course() {
       return getCourse()
+    },
+    asignaturas() {
+      return getSubjects()
     }
   }
 }
@@ -197,7 +170,10 @@ export default{
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  @include media-breakpoint-down(md) { text-align: left;}
+
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
 }
 
 .ano-escolar {
@@ -205,8 +181,11 @@ export default{
   display: flex;
   justify-content: flex-end;
   margin-bottom: 100px;
-  @include media-breakpoint-down(md) { justify-content: flex-start;
-  margin-bottom: 50px; }
+
+  @include media-breakpoint-down(md) {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
 }
 
 .info-tutora {
@@ -216,7 +195,10 @@ export default{
   align-items: flex-end;
   padding-bottom: 20px;
   margin-left: 20px;
-  @include media-breakpoint-down(md) { margin-top: 100px; }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 100px;
+  }
 }
 
 .tutora {
@@ -291,8 +273,11 @@ export default{
 .linea {
   border-top: 1px black solid;
   padding-top: 30px;
-  @include media-breakpoint-down(md) { border-top: none;
-  margin-top: 10px;}
+
+  @include media-breakpoint-down(md) {
+    border-top: none;
+    margin-top: 10px;
+  }
 }
 
 .lista {
@@ -304,12 +289,13 @@ export default{
 
 .lado-izquierdo {
 
- > div {
-  margin: 20px;
+  >div {
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    > span {
+
+    >span {
       width: 80%;
     }
   }
@@ -331,13 +317,20 @@ export default{
   border-radius: 3px;
   font-size: large;
 }
-.recursos{
-  @include media-breakpoint-down(md) {margin-top: 20px; }
+
+.recursos {
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  }
 }
+
 .acceso-biblioteca {
   text-align: center;
   margin: 10px 0 100px 0;
-  @include media-breakpoint-down(md) { margin-bottom: 50px; }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
 
 }
 
