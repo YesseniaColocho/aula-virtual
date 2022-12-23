@@ -78,13 +78,13 @@
               <template v-for="asignatura in asignaturas">
                 <div class="composicion">
                   <a href="/composicion">
-                    <span class="linea-color">{{ asignatura.name }}</span>
+                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{ asignatura.name }}</span>
                   </a>
-                  <img src="/flecha-abajo.png" />
+                  <img class="flecha" :class="{'flecha-abierta': asignaturasAbiertas.includes(asignatura.id)}" @click="toggleAsignatura(asignatura.id)" src="/flecha-abajo.png" />
                 </div>
 
-                <ul class="lista lineas-lista">
-                  <li v-for="modulo in asignatura.modules"> <span>{{modulo.name}}</span></li>
+                <ul v-if="asignaturasAbiertas.includes(asignatura.id)" class="lista lineas-lista">
+                  <li v-for="modulo in asignatura.modules"> <span>{{ modulo.name }}</span></li>
                 </ul>
               </template>
 
@@ -149,12 +149,28 @@ import { getCourse, getSubjects } from '../javascript/services/apiMock';
 
 <script>
 export default {
+  data() {
+    return {
+      asignaturasAbiertas: []
+    }
+  },
   computed: {
     course() {
       return getCourse()
     },
     asignaturas() {
       return getSubjects()
+    }
+  },
+  methods: {
+    toggleAsignatura(id) {
+
+      if (this.asignaturasAbiertas.includes(id)) {
+        this.asignaturasAbiertas = this.asignaturasAbiertas.filter((asignatura) => asignatura !== id)
+      }
+      else {
+        this.asignaturasAbiertas.push(id)
+      }
     }
   }
 }
@@ -295,8 +311,8 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-    >span {
-      width: 80%;
+    >a {
+      max-width: 80%;
     }
   }
 
@@ -341,5 +357,12 @@ export default {
   font-weight: bold;
   margin-bottom: 10px;
 
+}
+.flecha-abierta{
+  transform: rotate(-90deg);
+}
+.flecha{
+  cursor: pointer;
+  transition: transform 0.1s linear;
 }
 </style>

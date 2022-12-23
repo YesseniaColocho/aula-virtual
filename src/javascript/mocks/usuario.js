@@ -16,6 +16,7 @@ const usuario = {
     },
     subjects: [
         {
+            id:1,
             name: "Composición",
             teacher: "Andres Garrido B.",
             current_assignment: {
@@ -64,6 +65,7 @@ const usuario = {
             ]
         },
         {
+            id:2,
             name: "Componentes visuales de una pieza gráfica: la imagen",
             teacher: "Marc G.",
             current_assignment: {
@@ -112,6 +114,7 @@ const usuario = {
             ]
         },
         {
+            id:3,
             name: "Componentes visuales de una pieza gráfica: el color",
             teacher: "Alicia J.",
             current_assignment: {
@@ -160,6 +163,7 @@ const usuario = {
             ]
         },
         {
+            id:4,
             name: "Utilización de la composición para potenciar la idea creativa",
             teacher: "Carlos L.",
             current_assignment: {
@@ -208,6 +212,7 @@ const usuario = {
             ]
         },
         {
+            id:5,
             name: "Componentes visuales de una pieza gráfica: el logotipo",
             teacher: "Luis Miguel C.",
             current_assignment: {
