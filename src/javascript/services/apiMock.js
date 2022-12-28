@@ -14,6 +14,13 @@ export const getSubjects = () => {
     return usuario.subjects
 }
 
+export const getSubject = (id) => {
+    if(id){
+        return usuario.subjects.find(subject => subject.id === id)
+    }
+    return {}
+}
+
 export const getEmails = () => {
     return mensajeria.emails
 }
