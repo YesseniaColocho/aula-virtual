@@ -23,35 +23,18 @@
     </div>
 </template>
 
-<script setup>
-
-</script>
-
 <script>
 export default {
     name: "BarraCurso",
-    data() {
-        return {
-            progreso: 10,
-            marcadores: [{
-                texto: "1r trimestre",
-                porcentaje: 20
-            },
-            {
-                texto: "2o trimestre",
-                porcentaje: 40
-            },
-            {
-                texto: "3r trimestre",
-                porcentaje: 60
-            },
-            {
-                texto: "Examenes finales",
-                porcentaje: 90
-            }]
+    props:{
+        progreso:{
+            type:Number, default:0
+        },
+        marcadores:{
+            type:Array, default:[]
         }
     }
-}
+    }
 </script>
 
 <style scoped lang="scss">
