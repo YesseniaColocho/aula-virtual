@@ -56,11 +56,14 @@
                 <div class="row">
                     <div class="boton-informativo col-md-12 boton-azul">
                         <div>
-                            <strong>Ejercicio en curso:</strong> <a href="/entrega">{{ asignatura.current_assignment.name }}</a>
+                            <strong>Ejercicio en curso:</strong> <a href="/entrega">{{
+        asignatura.current_assignment.name
+}}</a>
                         </div>
 
                         <div class="entrega">
-                            Fin de entrega el {{ new Date(asignatura.current_assignment.due_date).toLocaleDateString() }}
+                            Fin de entrega el {{ new Date(asignatura.current_assignment.due_date).toLocaleDateString()
+}}
                         </div>
 
                     </div>
@@ -72,7 +75,7 @@
                     <div class="informacion-asignatura col-md-4">
 
                         <strong>La asignatura</strong>
-                       
+
                         <ListaAsignaturas :asignaturas="mappedModules"></ListaAsignaturas>
 
                     </div>
@@ -82,10 +85,10 @@
                         <strong>Recursos para el Módulo</strong>
 
                         <template v-for="modulo in asignatura.modules">
-                        <div v-if="modulo.type ==='module'" class="recursos-del-modulo">
-                            {{ modulo.name }}
-                        </div>
-                    </template>
+                            <div v-if="modulo.type === 'module'" class="recursos-del-modulo">
+                                {{ modulo.name }}
+                            </div>
+                        </template>
 
                     </div>
 
@@ -150,7 +153,7 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
-import Fecha from '../components/Fecha.vue';
+vue';
 import ListaAsignaturas from '../components/ListaAsignaturas.vue';
 import { getSubject } from '../javascript/services/apiMock';
 </script>
@@ -162,17 +165,17 @@ export default {
             asignatura: null
         };
     },
-    computed:{
-        mappedModules(){
-            return this.asignatura.modules.map((modulo,index) =>{
+    computed: {
+        mappedModules() {
+            return this.asignatura.modules.map((modulo, index) => {
 
                 return {
                     id: index,
                     name: modulo.name,
                     noEsAsignatura: true,
-                    modules: modulo.assignments.map((ejercicio) =>{
+                    modules: modulo.assignments.map((ejercicio) => {
 
-                        return {name: ejercicio}
+                        return { name: ejercicio }
                     })
                 }
             })
