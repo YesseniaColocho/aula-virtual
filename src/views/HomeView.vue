@@ -75,18 +75,7 @@
 
             <div class="lado-izquierdo">
 
-              <template v-for="asignatura in asignaturas">
-                <div class="composicion">
-                  <a href="/composicion">
-                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{ asignatura.name }}</span>
-                  </a>
-                  <img class="flecha" :class="{'flecha-abierta': asignaturasAbiertas.includes(asignatura.id)}" @click="toggleAsignatura(asignatura.id)" src="/flecha-abajo.png" />
-                </div>
-
-                <ul v-if="asignaturasAbiertas.includes(asignatura.id)" class="lista lineas-lista">
-                  <li v-for="modulo in asignatura.modules"> <span>{{ modulo.name }}</span></li>
-                </ul>
-              </template>
+              <ListaAsignaturas :asignaturas="asignaturas"></ListaAsignaturas>
 
             </div>
 
@@ -143,36 +132,22 @@ import BarraSuperior from '../components/BarraSuperior.vue';
 import BarraCurso from '../components/BarraCurso.vue';
 import Fecha from '../components/Fecha.vue';
 import { getCourse, getSubjects } from '../javascript/services/apiMock';
+import ListaAsignaturas from '../components/ListaAsignaturas.vue';
 
 //Aqui van la importaciones de componentes
 </script>
 
 <script>
 export default {
-  data() {
-    return {
-      asignaturasAbiertas: []
-    }
-  },
   computed: {
     course() {
-      return getCourse()
+      return getCourse();
     },
     asignaturas() {
-      return getSubjects()
+      return getSubjects();
     }
   },
-  methods: {
-    toggleAsignatura(id) {
-
-      if (this.asignaturasAbiertas.includes(id)) {
-        this.asignaturasAbiertas = this.asignaturasAbiertas.filter((asignatura) => asignatura !== id)
-      }
-      else {
-        this.asignaturasAbiertas.push(id)
-      }
-    }
-  }
+  components: { ListaAsignaturas }
 }
 </script>
 
@@ -296,33 +271,6 @@ export default {
   }
 }
 
-.lista {
-  li {
-    list-style: none;
-    margin: 10px;
-  }
-}
-
-.lado-izquierdo {
-
-  >div {
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    >a {
-      max-width: 80%;
-    }
-  }
-
-  div.composicion {
-    a {
-      color: initial;
-    }
-  }
-}
-
 .referencias-año-escolar {
   margin-top: 7px;
   padding: 15px 5px;
@@ -357,12 +305,5 @@ export default {
   font-weight: bold;
   margin-bottom: 10px;
 
-}
-.flecha-abierta{
-  transform: rotate(-90deg);
-}
-.flecha{
-  cursor: pointer;
-  transition: transform 0.1s linear;
 }
 </style>

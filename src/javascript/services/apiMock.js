@@ -16,7 +16,7 @@ export const getSubjects = () => {
 
 export const getSubject = (id) => {
     if(id){
-        return usuario.subjects.find(subject => subject.id === id)
+        return usuario.subjects.find(subject => subject.id === parseInt(id))
     }
     return {}
 }
