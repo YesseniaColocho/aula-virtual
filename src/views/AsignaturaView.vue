@@ -153,7 +153,7 @@
 <script setup>
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
-vue';
+import Fecha from '../components/Fecha.vue';
 import ListaAsignaturas from '../components/ListaAsignaturas.vue';
 import { getSubject } from '../javascript/services/apiMock';
 </script>
@@ -185,7 +185,7 @@ export default {
     created() {
         this.asignatura = getSubject(this.$route.params.id);
     },
-    components: { ListaAsignaturas }
+    components: { ListaAsignaturas, Fecha }
 }
 </script>
 
