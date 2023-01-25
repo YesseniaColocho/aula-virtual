@@ -2,14 +2,16 @@
     <div class="lista-asignaturas">
         <template v-for="asignatura in asignaturas">
             <div class="composicion">
-               
+
                 <div v-if="asignatura.noEsAsignatura">
-                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{ asignatura.name
+                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{
+                        asignatura.name
                     }}</span>
                 </div>
 
                 <a v-else :href="`/asignatura/${asignatura.id}`">
-                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{ asignatura.name
+                    <span :class="{ 'linea-color': asignaturasAbiertas.includes(asignatura.id) }">{{
+                        asignatura.name
                     }}</span>
                 </a>
 
@@ -63,13 +65,13 @@ export default {
         transition: transform 0.1s linear;
     }
 
-    >div {
+    > div {
         margin: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        >a {
+        > a {
             max-width: 80%;
         }
     }

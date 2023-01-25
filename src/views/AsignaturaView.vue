@@ -57,13 +57,14 @@
                     <div class="boton-informativo col-md-12 boton-azul">
                         <div>
                             <strong>Ejercicio en curso:</strong> <a href="/entrega">{{
-        asignatura.current_assignment.name
-}}</a>
+                                asignatura.current_assignment.name
+                            }}</a>
                         </div>
 
                         <div class="entrega">
-                            Fin de entrega el {{ new Date(asignatura.current_assignment.due_date).toLocaleDateString()
-}}
+                            Fin de entrega el {{
+                                new Date(asignatura.current_assignment.due_date).toLocaleDateString()
+                            }}
                         </div>
 
                     </div>
