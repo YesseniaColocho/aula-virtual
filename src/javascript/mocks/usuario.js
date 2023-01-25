@@ -70,7 +70,7 @@ const usuario = {
             teacher: "Marc G.",
             current_assignment: {
                 name: "Ejercicio 2",
-                due_date: 1666908000000
+                due_date: 1666808000000
             },
             modules: [
                 {

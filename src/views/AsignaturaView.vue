@@ -9,7 +9,7 @@
         <div class="titulos">
             <div class="titulo">
                 <h5>Dirección de arte y creatividad audiovisual</h5>
-                <h2>Composición</h2>
+                <h2>{{ asignatura.name }}</h2>
             </div>
 
             <div class="descripcion">
@@ -24,7 +24,7 @@
             <div class="parte-izquierda col-md-3">
 
                 <div class="profesor">
-                    <strong>Profesor especialista:</strong><br> Andres Garrido B.
+                    <strong>Profesor especialista:</strong><br> {{ asignatura.teacher }}
                     <a href="/mensajeria">
                         <img src="/group.png">
                     </a>
@@ -35,49 +35,17 @@
                 </div>
 
                 <div class="notas">
-                    <div>
+                    <div v-for="modulo in asignatura.modules">
                         <div class="modulo">
-                            Módulo 1
+                            {{ modulo.name }}
                         </div>
 
                         <div class="calificacion">
-                            8
+                            {{ modulo.grade }}
                         </div>
 
                     </div>
 
-                    <div>
-                        <div class="modulo">
-                            Módulo 2
-                        </div>
-
-                        <div class="calificacion">
-                            5
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <div class="modulo">
-                            Módulo 3
-                        </div>
-
-                        <div class="calificacion">
-                            -
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <div class="modulo">
-                            Examen final
-                        </div>
-
-                        <div class="calificacion">
-                            -
-                        </div>
-
-                    </div>
 
                 </div>
 
@@ -88,12 +56,15 @@
                 <div class="row">
                     <div class="boton-informativo col-md-12 boton-azul">
                         <div>
-                            <strong>Ejercicio en curso:</strong> <a href="/entrega">Conocimientos de la composición
-                                1</a>
+                            <strong>Ejercicio en curso:</strong> <a href="/entrega">{{
+                                asignatura.current_assignment.name
+                            }}</a>
                         </div>
 
                         <div class="entrega">
-                            Fin de entrega el 28/10/2022
+                            Fin de entrega el {{
+                                new Date(asignatura.current_assignment.due_date).toLocaleDateString()
+                            }}
                         </div>
 
                     </div>
@@ -106,29 +77,7 @@
 
                         <strong>La asignatura</strong>
 
-                        <div class="modulos">
-                            <span class="linea-color">Módulo 1</span>
-                            <img src="/flecha-abajo.png" />
-                        </div>
-
-                        <div>
-                            <ul class="informacion-asignatura lineas-lista">
-                                <li><span>Introducción</span></li>
-                                <li><span>Ejercicio 1: Arte y modelado en nuevas tecnologías</span></li>
-                                <li><span>Ejercicio 2: Estructura osea natural y animal. Conocmientos básicos</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="modulos">
-                            Módulo 2
-                            <img src="/flecha.png" />
-                        </div>
-
-                        <div class="modulos">
-                            Módulo 3
-                            <img src="/flecha.png" />
-                        </div>
+                        <ListaAsignaturas :asignaturas="mappedModules"></ListaAsignaturas>
 
                     </div>
 
@@ -136,17 +85,12 @@
 
                         <strong>Recursos para el Módulo</strong>
 
-                        <div class="recursos-del-modulo">
-                            Módulo 1
-                        </div>
+                        <template v-for="modulo in asignatura.modules">
+                            <div v-if="modulo.type === 'module'" class="recursos-del-modulo">
+                                {{ modulo.name }}
+                            </div>
+                        </template>
 
-                        <div class="recursos-del-modulo">
-                            Módulo 2
-                        </div>
-
-                        <div class="recursos-del-modulo">
-                            Módulo 3
-                        </div>
                     </div>
 
                     <div class="alumnado col-md-4">
@@ -211,8 +155,39 @@
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import Fecha from '../components/Fecha.vue';
+import ListaAsignaturas from '../components/ListaAsignaturas.vue';
+import { getSubject } from '../javascript/services/apiMock';
+</script>
 
+<script>
+export default {
+    data() {
+        return {
+            asignatura: null
+        };
+    },
+    computed: {
+        mappedModules() {
+            return this.asignatura.modules.map((modulo, index) => {
 
+                return {
+                    id: index,
+                    name: modulo.name,
+                    noEsAsignatura: true,
+                    modules: modulo.assignments.map((ejercicio) => {
+
+                        return { name: ejercicio }
+                    })
+                }
+            })
+        }
+    },
+
+    created() {
+        this.asignatura = getSubject(this.$route.params.id);
+    },
+    components: { ListaAsignaturas, Fecha }
+}
 </script>
 
 <style scoped lang="scss">
