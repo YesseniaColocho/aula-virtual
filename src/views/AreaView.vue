@@ -21,11 +21,11 @@
 
                 <div class="cursos-matriculados">
                     <div>
-                        Dirección de Arte y Creatvidad Audiovisual
+                        {{ titulo }}
                     </div>
 
                     <div class="cursos-matriculados">
-                        Animación Digital para Cómic
+                        {{ curso }}
                     </div>
 
                 </div>
@@ -38,17 +38,17 @@
             <div class=" datos-izquierda col-md-5">
                 <div class="nombre-input">
                     Nombre
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.name" />
                 </div>
 
                 <div class="nombre-input">
                     Apellidos
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.lastname" />
                 </div>
 
                 <div class="nombre-input">
                     Telefono
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.tlf" />
                 </div>
 
             </div>
@@ -58,18 +58,25 @@
             <div class="parte-derecha col-md-6">
                 <div class="nombre-input">
                     DNI
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.dni" />
                 </div>
 
                 <div class="nombre-input">
                     Dirección
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.address" />
                 </div>
 
                 <div class="nombre-input">
                     Email
-                    <input class="boton-input" type="text" />
+                    <input class="boton-input" type="text" :value="informacionUsuario.email" />
                 </div>
+
+                <div class="boton-guardar">
+
+                    <button class="boton-azul">Guardar</button>
+
+                </div>
+
             </div>
         </div>
 
@@ -125,8 +132,30 @@
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import FotografiaAlumno from '../components/FotografiaAlumno.vue';
+import { getCourse, getUser } from '../javascript/services/apiMock';
+</script>
+
+<script>
+export default {
+    data() {
+
+    },
+    computed: {
+        informacionUsuario() {
+            return getUser()
+        },
+
+        titulo() {
+            return getCourse().course_name
+        },
+        curso() {
+            return getCourse().grade_name
+        }
+
+    }
 
 
+}
 </script>
 
 <style scoped lang="scss">
@@ -252,6 +281,17 @@ import FotografiaAlumno from '../components/FotografiaAlumno.vue';
 .area {
     footer {
         margin-top: 0;
+    }
+}
+
+.boton-guardar {
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 10px;
+
+    .boton-azul {
+        padding: 5px 10px;
+        border-radius: 3px;
     }
 }
 </style>
