@@ -1,5 +1,6 @@
 const aulaVirtual = {
     course_name: "Dirección de Arte y Creatividad Audiovisual",
+    grade_name: "Animación Digital para Cómic",
     year: "2022/2023",
     mensajes_foro: 0,
     estudiantes_conectados: 15,
