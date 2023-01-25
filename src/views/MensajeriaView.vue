@@ -107,9 +107,9 @@
 
                 <div v-for="email in emails" class="informacion-email">
                     <input class="boton-check" type="checkbox" />
-                    <span>{{ email.enviar }}</span>
-                    <span>{{ email.asunto }}</span>
-                    <span>{{ email.fecha }}</span>
+                    <span>{{ email.from }}</span>
+                    <span>{{ email.subject }}</span>
+                    <span>{{ new Date(email.date).toLocaleString() }}</span>
                 </div>
 
 
@@ -129,47 +129,18 @@
 import BarraInferior from '../components/BarraInferior.vue';
 import BarraSuperior from '../components/BarraSuperior.vue';
 import Fecha from '../components/Fecha.vue';
+import { getEmails } from '../javascript/services/apiMock';
 </script>
 
 <script>
 export default {
     name: "MensajeriaView",
-    data() {
-        return {
-            emails: [
-                {
-                    enviar: "Andres Garrido B",
-                    asunto: "Duda Módulo 3",
-                    fecha: "Viernes 18/10/2022",
-                },
-                {
-                    enviar: "Carmen Gutierrez Aros",
-                    asunto: "Tutoría",
-                    fecha: "Miercoles 07/10/2022",
-                },
-                {
-                    enviar: "María Gomez Santos",
-                    asunto: "Confusión en calificacción",
-                    fecha: "Lunes 27/09/2022",
-                },
-                {
-                    enviar: "Andres Garrido B",
-                    asunto: "Re: Seguimiento",
-                    fecha: "Jueves 01/09/2022",
-                },
-                {
-                    enviar: "Ernesto A Lopez",
-                    asunto: "Cambio fecha de entrega",
-                    fecha: "Martes 23/08/20222",
-                },
-                {
-                    enviar: "Carmen Gutierrez Aros",
-                    asunto: "Becas",
-                    fecha: "Viernes 17/08/2022",
-                }
-            ]
-        };
+    computed: {
+        emails() {
+            return getEmails()
+        }
     },
+
     components: { Fecha }
 }
 </script>
