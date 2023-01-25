@@ -170,7 +170,10 @@ export default {
             ]
         };
     },
-    components: { Fecha }
+    components: { Fecha },
+    created(){
+        localStorage.setItem('mensajeriaVista', 'true')
+    }
 }
 </script>
 

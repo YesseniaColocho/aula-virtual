@@ -15,7 +15,9 @@
                     <img src="/calendario.png" />
                 </a>
                 <a href="/mensajeria">
-                    <img src="/avion.png" />
+                    <img v-if="mensajesVistos" src="/avion.png" />
+                    <img v-else src="/avionNotif.png" />
+
                 </a>
                 <a href="/areapersonal">
                     <FotografiaAlumno></FotografiaAlumno>
@@ -29,12 +31,24 @@
 
 <script setup>
 import FotografiaAlumno from './FotografiaAlumno.vue';
+</script>
 
-
+<script>
+export default {
+    name: 'BarraSuperior',
+    data() {
+        return {
+            mensajesVistos: false
+        }
+    },
+    mounted() {
+        this.mensajesVistos = localStorage.getItem('mensajeriaVista') === 'true'
+    }
+}
 </script>
 
 <style lang="scss">
-.barra .alumno-foto{
+.barra .alumno-foto {
     width: 70px;
 }
 </style>
@@ -54,9 +68,11 @@ import FotografiaAlumno from './FotografiaAlumno.vue';
 
         .primera-imagen {
             margin-left: 20px;
-            a{
+
+            a {
                 min-width: 50px;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
@@ -70,7 +86,8 @@ import FotografiaAlumno from './FotografiaAlumno.vue';
         >* {
             margin-left: 30px;
             width: 25%;
-            img{
+
+            img {
                 width: 100%;
             }
         }
